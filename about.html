@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Learn about Hike, your trusted food and beverage consultant. We help food brands and startups with product development, factory setup, and regulatory compliance.">
+    <title>About Us | Hike</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Outfit:wght@500;600;700;800&display=swap"
+        rel="stylesheet">
+    <!-- CSS Stylesheet -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Header Navigation -->
+    <header class="main-header" id="mainHeader">
+        <div class="container header-container">
+            <!-- Brand Logo -->
+            <a href="index.html" class="logo" aria-label="Hike Home">
+                <img src="assets/logo.png" alt="Hike Logo" class="logo-img">
+            </a>
+
+            <!-- Desktop Nav Menu -->
+            <nav class="nav-menu" id="navMenu">
+                <ul class="nav-list">
+                    <li><a href="index.html" class="nav-link">Home</a></li>
+                    <li><a href="about.html" class="nav-link active">About Us</a></li>
+                    <li class="dropdown">
+                        <a href="#" class="nav-link dropdown-toggle" id="servicesToggle">
+                            Services
+                            <svg class="dropdown-arrow" viewBox="0 0 24 24" width="16" height="16">
+                                <path d="M6 9l6 6 6-6" fill="none" stroke="currentColor" stroke-width="2"
+                                    stroke-linecap="round" stroke-linejoin="round" />
+                            </svg>
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a href="product-development.html">Product Development</a></li>
+                            <li><a href="manufacturing-setup.html">Manufacturing Setup</a></li>
+                            <li><a href="regulatory-compliance.html">Regulatory Compliance</a></li>
+                            <li><a href="contract-manufacturing.html">Contract Manufacturing</a></li>
+                            <li><a href="market-expansion.html">Market Expansion</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="index.html#industries" class="nav-link">Industries</a></li>
+                    <li><a href="case-studies.html" class="nav-link">Case Studies</a></li>
+                    <li><a href="contact.html" class="nav-link">Contact Us</a></li>
+                </ul>
+            </nav>
+
+            <!-- Header CTA -->
+            <div class="header-cta">
+                <a href="contact.html" class="btn btn-consultation-header" id="headerConsultBtn">
+                    <span>Book Free Consultation</span>
+                    <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2"
+                        stroke-linecap="round" stroke-linejoin="round">
+                        <rect x="3" y="4" width="18" height="18" rx="2" ry="2" />
+                        <line x1="16" y1="2" x2="16" y2="6" />
+                        <line x1="8" y1="2" x2="8" y2="6" />
+                        <line x1="3" y1="10" x2="21" y2="10" />
+                    </svg>
+                </a>
+            </div>
+
+            <!-- Hamburger Button for Mobile -->
+            <button class="mobile-toggle" id="mobileToggle" aria-label="Toggle Menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </button>
+        </div>
+    </header>
+
+    <main>
+        <!-- About Hero Section -->
+        <section class="service-hero" style="background-image: url('assets/about_hero.png');">
+            <div class="service-hero-overlay"></div>
+            <div class="container service-hero-content">
+                <span class="service-hero-subtitle">WHO WE ARE</span>
+                <h1 class="service-hero-title">Your Food and Beverage Consultant Partner</h1>
+                <p class="service-hero-desc">
+                    Hike is a professional food and beverage consultant. We help food brands, startups, and factories
+                    with product development, plant setup, and market growth.
+                </p>
+            </div>
+        </section>
+
+        <!-- Our Story Section -->
+        <section class="about-story-section">
+            <div class="container about-story-grid">
+                <div class="story-content">
+                    <span class="section-badge">OUR STORY</span>
+                    <h2>Food Business Consulting Under One Roof</h2>
+                    <p>
+                        Hike was started to make it easy for anyone to build a successful food or beverage business. As
+                        your dedicated food and beverage consultant, we help you at every step of your journey. From
+                        formulating a tasty recipe to setting up your processing factory, we handle everything.
+                    </p>
+                    <p>
+                        Our expert team includes food scientists, plant design engineers, FSSAI regulatory compliance
+                        experts, and retail sales consultants. We work together as one team to help you save money,
+                        avoid mistakes, and launch your food product quickly.
+                    </p>
+                    <p>
+                        We do not just give advice. We work with you on the factory floor, test recipes in the lab, set
+                        up processing machines, and train your staff to make sure food production runs smoothly.
+                    </p>
+                </div>
+                <div class="story-image-card">
+                    <img src="assets/about_team.png" alt="Hike Food Consulting Team" class="story-img">
+                </div>
+            </div>
+        </section>
+
+        <!-- Core Pillars Section -->
+        <section class="about-pillars-section">
+            <div class="container">
+                <div class="section-header-center">
+                    <span class="section-badge">OUR CORE PILLARS</span>
+                    <h2>How We Help You Grow</h2>
+                    <p>Every strategy we design and plant we setup is built on our three main commitments.</p>
+                </div>
+
+                <div class="pillars-grid">
+                    <!-- Pillar 1: Product Development -->
+                    <div class="pillar-card">
+                        <div class="pillar-image-wrapper">
+                            <img src="assets/pillar_development.png" alt="Product Development" class="pillar-img">
+                        </div>
+                        <div class="pillar-card-content">
+                            <h3>Product Development</h3>
+                            <p>Our food scientists help you formulate tasty recipes, improve shelf life, and optimize
+                                ingredient costs.</p>
+                        </div>
+                    </div>
+                    <!-- Pillar 2: Factory Plant Setup -->
+                    <div class="pillar-card">
+                        <div class="pillar-image-wrapper">
+                            <img src="assets/pillar_plant.png" alt="Factory Plant Setup" class="pillar-img">
+                        </div>
+                        <div class="pillar-card-content">
+                            <h3>Factory Plant Setup</h3>
+                            <p>We design clean, FSSAI-compliant plant layouts and coordinate machinery setup to start
+                                production smoothly.</p>
+                        </div>
+                    </div>
+                    <!-- Pillar 3: Supply Chain & GTM -->
+                    <div class="pillar-card">
+                        <div class="pillar-image-wrapper">
+                            <img src="assets/pillar_supply.png" alt="Supply Chain and GTM" class="pillar-img">
+                        </div>
+                        <div class="pillar-card-content">
+                            <h3>Supply Chain & GTM</h3>
+                            <p>We connect you with distributors, setup retail logistics, and help place your products
+                                successfully in the market.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Leadership Section -->
+        <section class="founder-section">
+            <div class="container">
+                <div class="founder-profile-grid">
+                    <!-- Left: Profile Image -->
+                    <div class="founder-image-card">
+                        <img src="assets/keval_gandhi.png"
+                            alt="Keval Gandhi, Managing Director of Hike Food And Beverages" class="founder-img">
+                        <div class="founder-meta">
+                            <h4>Keval Gandhi</h4>
+                            <span>Founder & Managing Director</span>
+                        </div>
+                    </div>
+
+                    <!-- Right: Profile Content -->
+                    <div class="founder-content">
+                        <span class="section-badge">OUR LEADERSHIP</span>
+                        <h3>Leading Turnkey Engineering & Industrial Consulting</h3>
+                        <p>
+                            Keval Gandhi is the Founder and Managing Director of <strong>Hike Food And
+                                Beverages</strong>
+                            (Ahmedabad, Gujarat), a globally recognized engineering and consulting enterprise.
+                            Specializing in turnkey processing plants and high-speed packaging machinery, Keval has
+                            guided over 50 projects worldwide, helping companies design GMP-compliant facilities and
+                            implement advanced industrial automation.
+                        </p>
+                        <p>
+                            At Hike, Keval brings his extensive background from Hike Food And Beverages to rebuild the
+                            technical foundation of food and beverage facilities. Rather than focusing solely on
+                            machines, he focuses on the entire system. By applying proprietary Organizational
+                            Transformation and Optimal Flow methods, Keval helps clients eliminate chaotic production
+                            bottlenecks, ensuring high profitability and continuous, predictable output.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer Section -->
+    <footer class="main-footer">
+        <div class="container footer-container">
+            <!-- Footer Column 1: Brand Info -->
+            <div class="footer-col brand-col">
+                <a href="index.html" class="footer-logo">
+                    <img src="assets/logo.png" alt="Hike Logo" class="footer-logo-img">
+                </a>
+                <p class="footer-brand-desc">
+                    Hike is your trusted partner for end-to-end food & beverage business consulting, guiding brands from
+                    product concept to commercial scaling and market launch.
+                </p>
+                <div class="social-links">
+                    <a href="#" aria-label="LinkedIn" class="social-icon-link">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                            stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z">
+                            </path>
+                            <rect x="2" y="9" width="4" height="12"></rect>
+                            <circle cx="4" cy="4" r="2"></circle>
+                        </svg>
+                    </a>
+                    <a href="#" aria-label="Instagram" class="social-icon-link">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                            stroke-linecap="round" stroke-linejoin="round">
+                            <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+                            <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+                            <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+                        </svg>
+                    </a>
+                    <a href="#" aria-label="Twitter" class="social-icon-link">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                            stroke-linecap="round" stroke-linejoin="round">
+                            <path
+                                d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z">
+                            </path>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Footer Column 2: Navigation Links -->
+            <div class="footer-col links-col">
+                <h4 class="footer-col-title">Navigation</h4>
+                <ul class="footer-link-list">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="index.html#core-services">Services</a></li>
+                    <li><a href="index.html#industries">Industries</a></li>
+                    <li><a href="case-studies.html">Case Studies</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                </ul>
+            </div>
+
+            <!-- Footer Column 3: Our Services -->
+            <div class="footer-col links-col">
+                <h4 class="footer-col-title">Our Services</h4>
+                <ul class="footer-link-list">
+                    <li><a href="product-development.html">Product Development</a></li>
+                    <li><a href="manufacturing-setup.html">Manufacturing Setup</a></li>
+                    <li><a href="regulatory-compliance.html">Regulatory Compliance</a></li>
+                    <li><a href="contract-manufacturing.html">Contract Manufacturing</a></li>
+                    <li><a href="market-expansion.html">Market Expansion</a></li>
+                </ul>
+            </div>
+
+            <!-- Footer Column 4: Contact details -->
+            <div class="footer-col contact-col">
+                <h4 class="footer-col-title">Contact Us</h4>
+                <ul class="footer-contact-list">
+                    <li class="contact-item">
+                        <svg class="contact-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                            stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                            <circle cx="12" cy="10" r="3"></circle>
+                        </svg>
+                        <span>210, Arved Transcube Mall, Bandhu Nagar, Vijay Nagar, Ranip, Ahmedabad, Gujarat
+                            382480</span>
+                    </li>
+                    <li class="contact-item">
+                        <svg class="contact-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                            stroke-linecap="round" stroke-linejoin="round">
+                            <path
+                                d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z">
+                            </path>
+                        </svg>
+                        <span>+91 98987 27796</span>
+                    </li>
+                    <li class="contact-item">
+                        <svg class="contact-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                            stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z">
+                            </path>
+                            <polyline points="22,6 12,13 2,6"></polyline>
+                        </svg>
+                        <span>info.hikefnb@gmail.com</span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Footer Bottom Section -->
+        <div class="footer-bottom">
+            <div class="container footer-bottom-inner">
+                <p class="copyright-text">&copy; 2026 Hike Food & Beverage Consultants. All Rights Reserved.</p>
+                <div class="footer-policy-links">
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms of Service</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Mobile Nav Overlay -->
+    <div class="mobile-menu-overlay" id="mobileOverlay"></div>
+
+    <!-- JS Script -->
+    <script src="script.js"></script>
+</body>
+
+</html>
