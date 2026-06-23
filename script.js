@@ -51,32 +51,55 @@ document.addEventListener('DOMContentLoaded', () => {
     mobileToggle.addEventListener('click', toggleMobileMenu);
     mobileOverlay.addEventListener('click', closeMobileMenu);
 
-    // Close mobile menu when clicking on any navigation link
-    const navLinks = document.querySelectorAll('.nav-link');
-    navLinks.forEach(link => {
-        // Exclude the services toggle since it needs to open a submenu on mobile
-        if (link.id !== 'servicesToggle') {
-            link.addEventListener('click', closeMobileMenu);
-        }
-    });
-
-    // 3. Mobile Dropdown Toggle Interaction
+    // 3. Mobile Navigation & Dropdown Handling
     const servicesToggle = document.getElementById('servicesToggle');
-    const servicesDropdown = servicesToggle.closest('.dropdown');
+    const servicesDropdown = servicesToggle ? servicesToggle.closest('.dropdown') : null;
+    const menuLinks = document.querySelectorAll('.nav-menu a');
 
-    servicesToggle.addEventListener('click', (e) => {
-        // Only run click handler on mobile/tablet viewports
-        if (window.innerWidth <= 991) {
-            e.preventDefault();
-            servicesDropdown.classList.toggle('active');
-        }
+    menuLinks.forEach(link => {
+        link.addEventListener('click', (e) => {
+            // Only apply mobile logic for viewport width <= 991px
+            if (window.innerWidth <= 991) {
+                const href = link.getAttribute('href') || '';
+                
+                // If it is the parent toggle button or just a spacer hash
+                if (link.id === 'servicesToggle' || href === '#') {
+                    e.preventDefault();
+                    if (servicesDropdown) {
+                        servicesDropdown.classList.toggle('active');
+                    }
+                    return;
+                }
+
+                // Check if it is a same-page anchor link (starts with # or matches current page name + #)
+                const currentPage = window.location.pathname.split('/').pop() || 'index.html';
+                const linkPage = href.split('#')[0];
+                const isAnchorOnSamePage = href.startsWith('#') || 
+                    (href.includes('#') && (linkPage === '' || linkPage === currentPage || (currentPage === 'index.html' && linkPage === 'index.html')));
+
+                if (isAnchorOnSamePage) {
+                    e.preventDefault();
+                    closeMobileMenu();
+                    const targetId = href.split('#')[1];
+                    const targetEl = document.getElementById(targetId);
+                    if (targetEl) {
+                        targetEl.scrollIntoView({ behavior: 'smooth' });
+                    }
+                }
+                
+                // For all other regular page links (about.html, contact.html, subpages),
+                // we do NOT call e.preventDefault(), allowing browser native navigation.
+            }
+        });
     });
 
     // Handle screen resize, reset state if transitioned from mobile to desktop
     window.addEventListener('resize', () => {
         if (window.innerWidth > 991) {
             closeMobileMenu();
-            servicesDropdown.classList.remove('active');
+            if (servicesDropdown) {
+                servicesDropdown.classList.remove('active');
+            }
         }
     });
 

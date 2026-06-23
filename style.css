@@ -650,7 +650,7 @@ ul {
     }
 
     .nav-link {
-        font-size: 1.15rem;
+        font-size: 1.05rem;
         width: 100%;
         border-bottom: 1px solid #EDF2F7;
         padding-bottom: 0.8rem;
@@ -701,7 +701,7 @@ ul {
         width: 100vw;
         height: 100vh;
         background-color: rgba(0, 0, 0, 0.5);
-        z-index: 1020;
+        z-index: 990;
         display: none;
         opacity: 0;
         transition: opacity 0.3s ease;
@@ -726,7 +726,7 @@ ul {
     }
 
     .hero-title {
-        font-size: 2.2rem;
+        font-size: 1.6rem;
     }
 
     .hero-description {
@@ -1688,7 +1688,7 @@ ul {
 }
 
 .service-hero-title {
-    font-size: clamp(2.2rem, 4vw, 3.2rem);
+    font-size: clamp(1.6rem, 4vw, 3.2rem);
     line-height: 1.2;
     font-weight: 800;
     margin-bottom: 1.2rem;
