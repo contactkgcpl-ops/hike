@@ -343,7 +343,7 @@ ul {
     display: flex;
     align-items: center;
     min-height: 85vh;
-    overflow: hidden;
+    
 }
 
 .hero-slider {
@@ -852,7 +852,7 @@ ul {
     /* Uniform height for card proportion */
     transition: var(--transition-smooth);
     position: relative;
-    overflow: hidden;
+    
     /* Hide sliding hover overlays outside card boundary */
     box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.02), 0 2px 4px -1px rgba(0, 0, 0, 0.01);
 }
@@ -1041,7 +1041,7 @@ ul {
     position: relative;
     height: 420px;
     border-radius: 8px;
-    overflow: hidden;
+    
     box-shadow: var(--shadow-sm);
     transition: var(--transition-smooth);
 }
@@ -1212,7 +1212,7 @@ ul {
     /* Safari */
     backface-visibility: hidden;
     border-radius: 8px;
-    overflow: hidden;
+    
 }
 
 /* Front view styling */
@@ -2189,7 +2189,7 @@ ul {
 
 .story-image-card {
     border-radius: 8px;
-    overflow: hidden;
+    
     box-shadow: var(--shadow-lg);
     border: 1px solid var(--color-border);
 }
@@ -2235,7 +2235,7 @@ ul {
     background-color: #FFFFFF;
     border: 1px solid var(--color-border);
     border-radius: 8px;
-    overflow: hidden;
+    
     box-shadow: var(--shadow-sm);
     transition: var(--transition-smooth);
     display: flex;
@@ -2251,7 +2251,7 @@ ul {
 .pillar-image-wrapper {
     width: 100%;
     height: 200px;
-    overflow: hidden;
+    
     position: relative;
     border-bottom: 1px solid var(--color-border);
 }
@@ -2300,7 +2300,7 @@ ul {
 
 .founder-image-card {
     border-radius: 12px;
-    overflow: hidden;
+    
     box-shadow: var(--shadow-lg);
     border: 1px solid var(--color-border);
     background-color: #FFFFFF;
@@ -2370,7 +2370,7 @@ ul {
     grid-template-columns: 1fr 1.3fr;
     border: 1px solid var(--color-border);
     border-radius: 12px;
-    overflow: hidden;
+    
     box-shadow: var(--shadow-md);
     background-color: #FFFFFF;
     transition: var(--transition-smooth);
@@ -2383,7 +2383,7 @@ ul {
 
 .case-study-image-wrapper {
     position: relative;
-    overflow: hidden;
+    
     min-height: 380px;
 }
 
@@ -2555,7 +2555,7 @@ ul {
 .mock-location-card {
     position: relative;
     border-radius: 8px;
-    overflow: hidden;
+    
     border: 1px solid var(--color-border);
     box-shadow: var(--shadow-md);
 }
@@ -2737,7 +2737,7 @@ ul {
 .featured-card {
     background: #fff;
     border-radius: 16px;
-    overflow: hidden;
+    
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
     transition: transform 0.3s ease;
 }
@@ -2748,7 +2748,7 @@ ul {
 
 .featured-img-wrapper {
     height: 300px;
-    overflow: hidden;
+    
 }
 
 .featured-img-wrapper img {
@@ -2895,7 +2895,7 @@ ul {
     background-image: url('assets/hero_slide_bakery.png');
     background-size: cover;
     background-position: center;
-    overflow: hidden;
+    
     display: flex;
     align-items: center;
     justify-content: center;
@@ -3078,3 +3078,91 @@ ul {
 .delay-100 { animation-delay: 0.1s; }
 .delay-200 { animation-delay: 0.2s; }
 .delay-300 { animation-delay: 0.3s; }
+
+
+
+
+
+
+
+
+.more-details-btn:hover,
+.more-details-btn.active {
+  background: #f58220;
+  color: #fff;
+  cursor: pointer;
+  box-shadow: 0 8px 20px rgba(245,130,32,0.25);
+}
+
+
+
+
+
+
+
+
+
+
+
+.more-details-btn {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: 56px;
+  background: #ffffff;
+  border: 2px solid #f58220;
+  border-radius: 14px;
+  transition: all 0.3s ease;
+  
+  text-decoration: none;
+}
+
+.more-details-btn:hover {
+  background: #f58220;
+  border-color: #f58220;
+  cursor: pointer;
+}
+
+.more-details-btn .btn-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 70px;
+  height: 100%;
+  border-right: 1px solid #f58220;
+  transition: all 0.3s ease;
+}
+
+.more-details-btn:hover .btn-icon {
+  border-right-color: #ffffff;
+}
+
+.more-details-btn svg {
+  color: #f58220;
+  width: 24px;
+  height: 24px;
+  transition: color 0.3s ease;
+}
+
+.more-details-btn:hover svg {
+  color: #ffffff;
+}
+
+.more-details-btn .btn-text {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  font-size: 16px;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+  color: #f58220;
+  transition: color 0.3s ease;
+  
+}
+
+.more-details-btn:hover .btn-text {
+  color: #ffffff;
+}
