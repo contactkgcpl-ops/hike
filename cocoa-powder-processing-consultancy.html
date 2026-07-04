@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Hike - Cocoa Powder Processing Plant Consultancy. End-to-end consultancy for setting up a premium cocoa powder processing business.">
+  <title>Hike | Cocoa Powder Processing Plant Consultancy</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Outfit:wght@500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="red-chilli-consultancy.css">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>tailwind.config={theme:{extend:{colors:{primary:'#1A5336',accent:'#4CAF50',dark:'#121212',light:'#F8F9FA'},fontFamily:{heading:['Outfit','sans-serif'],body:['Inter','sans-serif']}}}}</script>
+</head>
+<body>
+  <header class="main-header" id="mainHeader">
+    <div class="container header-container">
+      <a href="index.html" class="logo" aria-label="Hike Home"><img src="assets/logo.png" alt="Hike Logo" class="logo-img"></a>
+      <nav class="nav-menu" id="navMenu">
+        <ul class="nav-list">
+          <li><a href="index.html" class="nav-link">Home</a></li>
+          <li><a href="about.html" class="nav-link">About Us</a></li>
+          <li><a href="projects.html" class="nav-link active">Projects</a></li>
+          <li class="dropdown"><a href="#" class="nav-link dropdown-toggle" id="servicesToggle">Services <svg class="dropdown-arrow" viewBox="0 0 24 24" width="16" height="16"><path d="M6 9l6 6 6-6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+            <ul class="dropdown-menu"><li><a href="product-development.html">Product Development</a></li><li><a href="manufacturing-setup.html">Manufacturing Setup</a></li><li><a href="regulatory-compliance.html">Regulatory Compliance</a></li><li><a href="contract-manufacturing.html">Contract Manufacturing</a></li><li><a href="market-expansion.html">Market Expansion</a></li></ul>
+          </li>
+          <li><a href="index.html#industries" class="nav-link">Industries</a></li>
+          <li><a href="case-studies.html" class="nav-link">Case Studies</a></li>
+          <li><a href="contact.html" class="nav-link">Contact Us</a></li>
+        </ul>
+      </nav>
+      <div class="header-cta"><a href="contact.html" class="btn btn-consultation-header" id="headerConsultBtn"><span>Book Free Consultation</span><svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg></a></div>
+      <button class="mobile-toggle" id="mobileToggle" aria-label="Toggle Menu"><span class="bar"></span><span class="bar"></span><span class="bar"></span></button>
+    </div>
+  </header>
+
+  <main><div class="rcp-page">
+
+    <!-- HERO BANNER -->
+    <section class="rcp-hero">
+      <div class="rcp-hero__overlay"></div>
+      <div class="rcp-hero__bg" style="background-image: url('public/images/turnkey-projects/cocoa-powder-processing/hero-banner.png')"></div>
+      <div class="rcp-hero__content">
+        <span class="rcp-hero__badge"><span class="rcp-hero__badge-dot"></span>TURNKEY COCOA POWDER PROCESSING SOLUTION</span>
+        <h1 class="rcp-hero__title">Cocoa Powder Processing Plant Consultancy</h1>
+        <p class="rcp-hero__subtitle">Professional consultancy services for cocoa powder manufacturing plants, from feasibility studies and plant design to equipment selection, process optimization, and production scaling.</p>
+        <div class="rcp-hero__actions"><a href="contact.html" class="rcp-btn rcp-btn--primary rcp-btn--lg">Get Consultation</a><a href="#machinery" class="rcp-btn rcp-btn--outline">View Services</a></div>
+      </div>
+    </section>
+
+    <!-- OVERVIEW -->
+    <section class="rcp-section rcp-overview" id="overview" data-animate>
+      <div class="rcp-container rcp-animate">
+        <div class="rcp-section-badge">Consultancy Overview</div>
+        <h2 class="rcp-section-title">Complete Cocoa Powder Plant <span class="rcp-accent">Consultancy Solution</span></h2>
+        <div class="rcp-overview__grid">
+          <div class="rcp-overview__text">
+            <p>Hike provides end-to-end consultancy for Cocoa Powder Processing Plant projects. We assist chocolate manufacturers, food ingredient suppliers, and agro-processors with business planning, plant setup, bean-to-powder process optimization, equipment selection, alkalization and defatting process guidance, quality certification, and market strategies. With growing global demand for cocoa ingredients, our expert guidance ensures your plant meets international food grade standards.</p>
+            <div class="rcp-overview__features">
+              <div class="rcp-overview__feature"><div class="rcp-overview__feature-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><polyline points="22 7 13.5 15.5 8.5 10.5 2 17"/><polyline points="16 7 22 7 22 13"/></svg></div><div class="rcp-overview__feature-body"><p class="rcp-overview__feature-title">Business Planning</p><p class="rcp-overview__feature-desc">Feasibility analysis, investment planning, and detailed project reports for cocoa processing ventures.</p></div></div>
+              <div class="rcp-overview__feature"><div class="rcp-overview__feature-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><path d="m9 12 2 2 4-4"/></svg></div><div class="rcp-overview__feature-body"><p class="rcp-overview__feature-title">Process Design</p><p class="rcp-overview__feature-desc">Bean cleaning, roasting, winnowing, grinding, pressing, and alkalization process flow design.</p></div></div>
+              <div class="rcp-overview__feature"><div class="rcp-overview__feature-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="3"/><path d="M12 1v4M12 19v4M4.22 4.22l2.83 2.83M16.95 16.95l2.83 2.83M1 12h4M19 12h4M4.22 19.78l2.83-2.83M16.95 7.05l2.83-2.83"/></svg></div><div class="rcp-overview__feature-body"><p class="rcp-overview__feature-title">Compliance Support</p><p class="rcp-overview__feature-desc">FSSAI, ISO 22000, FDA, EU cocoa regulations, and EUDR compliance guidance.</p></div></div>
+              <div class="rcp-overview__feature"><div class="rcp-overview__feature-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><path d="M13 2 3 14h9l-1 8 10-12h-9l1-8z"/></svg></div><div class="rcp-overview__feature-body"><p class="rcp-overview__feature-title">Growth Strategy</p><p class="rcp-overview__feature-desc">B2B ingredient market positioning, chocolate manufacturer partnerships, and export planning.</p></div></div>
+            </div>
+          </div>
+          <div class="rcp-overview__image rcp-overview__image--photo">
+            <img src="public/images/turnkey-projects/cocoa-powder-processing/cocoa1.jpg" alt="Cocoa Powder Processing Plant Consultancy" loading="lazy" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROCESS FLOW -->
+    <section class="rcp-section rcp-process-new" id="process-flow" data-animate>
+      <div class="rcp-container rcp-animate">
+        <div class="rcp-section-badge">Our Consultancy Process</div>
+        <h2 class="rcp-section-title">Consultancy <span class="rcp-accent">Workflow</span></h2>
+        <p class="rcp-section-subtitle">A comprehensive consultancy workflow from cocoa bean sourcing strategy through finished powder production, designed to ensure premium quality and maximum process efficiency.</p>
+        <div class="rcp-process-flow-container">
+          <div class="rcp-process-card"><div class="rcp-process-card__icon"><svg class="rcp-process-card__icon-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16Z"/><path d="m3.3 7 8.7 5 8.7-5"/><path d="M12 22V12"/></svg></div><div class="rcp-process-card__label">Requirement Discussion</div></div>
+          <div class="rcp-process-arrow"><svg class="rcp-process-flow-arrow-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><path d="M5 12h14M12 5l7 7-7 7" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+          <div class="rcp-process-card"><div class="rcp-process-card__icon"><svg class="rcp-process-card__icon-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 3H2l8 9.46V19l4 2v-8.54L22 3z"/></svg></div><div class="rcp-process-card__label">Business Feasibility Analysis</div></div>
+          <div class="rcp-process-arrow"><svg class="rcp-process-flow-arrow-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><path d="M5 12h14M12 5l7 7-7 7" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+          <div class="rcp-process-card"><div class="rcp-process-card__icon"><svg class="rcp-process-card__icon-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M6.34 17.66l-1.41 1.41M19.07 4.93l-1.41 1.41"/></svg></div><div class="rcp-process-card__label">Process & Plant Design</div></div>
+          <div class="rcp-process-arrow"><svg class="rcp-process-flow-arrow-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><path d="M5 12h14M12 5l7 7-7 7" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+          <div class="rcp-process-card"><div class="rcp-process-card__icon"><svg class="rcp-process-card__icon-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="3"/><path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 1 1-2.83 2.83l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-4 0v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 1 1-2.83-2.83l.06-.06A1.65 1.65 0 0 0 4.68 15a1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1 0-4h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 1 1 2.83-2.83l.06.06A1.65 1.65 0 0 0 9 4.68a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 4 0v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 1 1 2.83 2.83l-.06.06A1.65 1.65 0 0 0 19.4 9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 0 4h-.09a1.65 1.65 0 0 0-1.51 1z"/></svg></div><div class="rcp-process-card__label">Equipment Selection</div></div>
+          <div class="rcp-process-arrow"><svg class="rcp-process-flow-arrow-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><path d="M5 12h14M12 5l7 7-7 7" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+          <div class="rcp-process-card"><div class="rcp-process-card__icon"><svg class="rcp-process-card__icon-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 3v18M3 12h18M12 3a9 9 0 1 0 0 18 9 9 0 0 0 0-18z"/><path d="M7.5 7.5l9 9M7.5 16.5l9-9"/></svg></div><div class="rcp-process-card__label">Compliance & Certification</div></div>
+          <div class="rcp-process-arrow"><svg class="rcp-process-flow-arrow-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><path d="M5 12h14M12 5l7 7-7 7" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+          <div class="rcp-process-card"><div class="rcp-process-card__icon"><svg class="rcp-process-card__icon-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M19 22H5a2 2 0 0 1-2-2V4h18v16a2 2 0 0 1-2 2z"/><path d="M12 4v10"/><path d="M9 11l3 3 3-3"/></svg></div><div class="rcp-process-card__label">Market Entry Strategy</div></div>
+          <div class="rcp-process-arrow"><svg class="rcp-process-flow-arrow-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><path d="M5 12h14M12 5l7 7-7 7" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+          <div class="rcp-process-card"><div class="rcp-process-card__icon"><svg class="rcp-process-card__icon-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22V12M3 12h18M12 2l9 5-9 5-9-5 9-5z"/><path d="M3 7v10l9 5 9-5V7"/></svg></div><div class="rcp-process-card__label">Growth Roadmap</div></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- EXPERTISE -->
+    <section class="rcp-section rcp-machinery" id="machinery" data-animate>
+      <div class="rcp-container rcp-animate">
+        <div class="rcp-section-badge">Consultancy Services</div>
+        <h2 class="rcp-section-title">Our <span class="rcp-accent">Expertise</span></h2>
+        <div class="rcp-machinery__grid">
+          <div class="rcp-machine-card">
+            <div class="rcp-machine-card__image-wrapper">
+              <img src="public/images/turnkey-projects/cocoa-powder-processing/cocoa1.jpg" alt="Business Feasibility Study" class="rcp-machine-card__image" loading="lazy" />
+              <div class="rcp-machine-card__badge">01</div>
+            </div>
+            <div class="rcp-machine-card__content">
+              <h3 class="rcp-machine-card__title">Business Feasibility Study</h3>
+              <p class="rcp-machine-card__desc">Market demand analysis, investment projections, and profitability assessment for cocoa powder ventures.</p>
+            </div>
+          </div>
+          <div class="rcp-machine-card">
+            <div class="rcp-machine-card__image-wrapper">
+              <img src="public/images/turnkey-projects/cocoa-powder-processing/cocoa7.jpg" alt="Bean-to-Powder Process Design" class="rcp-machine-card__image" loading="lazy" />
+              <div class="rcp-machine-card__badge">02</div>
+            </div>
+            <div class="rcp-machine-card__content">
+              <h3 class="rcp-machine-card__title">Bean-to-Powder Process Design</h3>
+              <p class="rcp-machine-card__desc">Complete process flow from cocoa bean cleaning, roasting, winnowing, grinding, pressing to powder packaging.</p>
+            </div>
+          </div>
+          <div class="rcp-machine-card">
+            <div class="rcp-machine-card__image-wrapper">
+              <img src="public/images/turnkey-projects/cocoa-powder-processing/cocoa3.jpg" alt="Alkalization & Defatting Guidance" class="rcp-machine-card__image" loading="lazy" />
+              <div class="rcp-machine-card__badge">03</div>
+            </div>
+            <div class="rcp-machine-card__content">
+              <h3 class="rcp-machine-card__title">Alkalization & Defatting Guidance</h3>
+              <p class="rcp-machine-card__desc">Expert guidance on Dutch-process cocoa alkalization, fat extraction, and powder standardization techniques.</p>
+            </div>
+          </div>
+          <div class="rcp-machine-card">
+            <div class="rcp-machine-card__image-wrapper">
+              <img src="public/images/turnkey-projects/cocoa-powder-processing/cocoa4.jpg" alt="Regulatory Compliance" class="rcp-machine-card__image" loading="lazy" />
+              <div class="rcp-machine-card__badge">04</div>
+            </div>
+            <div class="rcp-machine-card__content">
+              <h3 class="rcp-machine-card__title">Regulatory Compliance</h3>
+              <p class="rcp-machine-card__desc">FSSAI, ISO 22000, FDA, EU cocoa regulations, and EUDR (Deforestation Regulation) compliance assistance.</p>
+            </div>
+          </div>
+          <div class="rcp-machine-card">
+            <div class="rcp-machine-card__image-wrapper">
+              <img src="public/images/turnkey-projects/cocoa-powder-processing/cocoa5.jpg" alt="Quality Management Systems" class="rcp-machine-card__image" loading="lazy" />
+              <div class="rcp-machine-card__badge">05</div>
+            </div>
+            <div class="rcp-machine-card__content">
+              <h3 class="rcp-machine-card__title">Quality Management Systems</h3>
+              <p class="rcp-machine-card__desc">Implementation of QC protocols for fat content, moisture, pH, color, and microbiological standards.</p>
+            </div>
+          </div>
+          <div class="rcp-machine-card">
+            <div class="rcp-machine-card__image-wrapper">
+              <img src="public/images/turnkey-projects/cocoa-powder-processing/cocoa6.jpg" alt="B2B Market Entry Strategy" class="rcp-machine-card__image" loading="lazy" />
+              <div class="rcp-machine-card__badge">06</div>
+            </div>
+            <div class="rcp-machine-card__content">
+              <h3 class="rcp-machine-card__title">B2B Market Entry Strategy</h3>
+              <p class="rcp-machine-card__desc">Connecting with chocolate manufacturers, bakeries, beverage companies, and global ingredient buyers.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="rcp-section rcp-faq-section" id="faq" data-animate>
+      <div class="rcp-container rcp-animate">
+        <div class="rcp-section-badge">FAQs</div>
+        <h2 class="rcp-section-title">Frequently Asked <span class="rcp-accent">Questions</span></h2>
+        <p class="rcp-section-subtitle">Common queries about our cocoa powder processing plant consultancy.</p>
+        <div class="rcp-faq__list">
+          <div class="rcp-faq__item"><button class="rcp-faq__question-btn" type="button" aria-expanded="false" onclick="this.parentElement.classList.toggle('rcp-faq__item--open')"><span class="rcp-faq__question-text">What is the difference between natural and Dutch-process cocoa powder?</span><span class="rcp-faq__icon-toggle"><svg class="rcp-faq__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M12 5v14M5 12h14" stroke-linecap="round" stroke-linejoin="round"/></svg></span></button><div class="rcp-faq__answer-wrapper"><div class="rcp-faq__answer-content"><p>Natural cocoa powder is produced without alkalization and retains a strong, acidic chocolate flavor. Dutch-process (alkalized) cocoa is treated with alkali to neutralize acidity, resulting in a milder, darker powder preferred for baking. We help you decide which type to produce based on your target market.</p></div></div></div>
+          <div class="rcp-faq__item"><button class="rcp-faq__question-btn" type="button" aria-expanded="false" onclick="this.parentElement.classList.toggle('rcp-faq__item--open')"><span class="rcp-faq__question-text">What raw materials are required for a cocoa powder processing plant?</span><span class="rcp-faq__icon-toggle"><svg class="rcp-faq__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M12 5v14M5 12h14" stroke-linecap="round" stroke-linejoin="round"/></svg></span></button><div class="rcp-faq__answer-wrapper"><div class="rcp-faq__answer-content"><p>The primary raw material is raw or fermented cocoa beans sourced from producing regions like Ghana, Ivory Coast, Ecuador, or India. We provide guidance on bean quality assessment, sourcing strategies, and storage requirements.</p></div></div></div>
+          <div class="rcp-faq__item"><button class="rcp-faq__question-btn" type="button" aria-expanded="false" onclick="this.parentElement.classList.toggle('rcp-faq__item--open')"><span class="rcp-faq__question-text">What are the key products of a cocoa processing plant?</span><span class="rcp-faq__icon-toggle"><svg class="rcp-faq__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M12 5v14M5 12h14" stroke-linecap="round" stroke-linejoin="round"/></svg></span></button><div class="rcp-faq__answer-wrapper"><div class="rcp-faq__answer-content"><p>A cocoa processing plant can produce cocoa powder (natural & alkalized), cocoa butter, cocoa liquor/mass, and cocoa nibs — all high-value B2B ingredients sold to chocolate, dairy, bakery, and beverage manufacturers globally.</p></div></div></div>
+          <div class="rcp-faq__item"><button class="rcp-faq__question-btn" type="button" aria-expanded="false" onclick="this.parentElement.classList.toggle('rcp-faq__item--open')"><span class="rcp-faq__question-text">Does Hike assist with EUDR compliance for cocoa?</span><span class="rcp-faq__icon-toggle"><svg class="rcp-faq__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M12 5v14M5 12h14" stroke-linecap="round" stroke-linejoin="round"/></svg></span></button><div class="rcp-faq__answer-wrapper"><div class="rcp-faq__answer-content"><p>Yes, the EU Deforestation Regulation (EUDR) requires due diligence for cocoa exported to Europe. We guide exporters through traceability systems, geolocation documentation, and compliance frameworks required under EUDR.</p></div></div></div>
+          <div class="rcp-faq__item"><button class="rcp-faq__question-btn" type="button" aria-expanded="false" onclick="this.parentElement.classList.toggle('rcp-faq__item--open')"><span class="rcp-faq__question-text">Can Hike help with organic cocoa certification?</span><span class="rcp-faq__icon-toggle"><svg class="rcp-faq__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M12 5v14M5 12h14" stroke-linecap="round" stroke-linejoin="round"/></svg></span></button><div class="rcp-faq__answer-wrapper"><div class="rcp-faq__answer-content"><p>Absolutely. We provide guidance on organic cocoa certification (USDA Organic, EU Organic, India Organic), fair trade certifications, and Rainforest Alliance standards that command premium pricing in global markets.</p></div></div></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- GALLERY -->
+    <section class="rcp-section rcp-gallery" id="gallery" data-animate>
+      <div class="rcp-container rcp-animate">
+        <div class="rcp-section-badge">Our Work</div>
+        <h2 class="rcp-section-title">Plant <span class="rcp-accent">Gallery</span></h2>
+        <div class="rcp-gallery__showcase">
+          <!-- Main Image -->
+          <div class="rcp-gallery__main">
+            <img src="public/images/turnkey-projects/cocoa-powder-processing/cocoa1.jpg" alt="Plant Operations" class="rcp-gallery__main-img" id="mainGalleryImg" loading="lazy" />
+            <div class="rcp-gallery__caption" id="mainGalleryCaption">Plant Operations</div>
+          </div>
+          
+          <!-- Thumbnails -->
+          <div class="rcp-gallery__thumbs">
+            <button class="rcp-gallery__thumb rcp-gallery__thumb--active" data-src="public/images/turnkey-projects/cocoa-powder-processing/cocoa1.jpg" data-caption="Plant Operations" aria-label="View Plant Operations">
+              <img src="public/images/turnkey-projects/cocoa-powder-processing/cocoa1.jpg" alt="Thumbnail 1" loading="lazy" />
+            </button>
+            <button class="rcp-gallery__thumb" data-src="public/images/turnkey-projects/cocoa-powder-processing/cocoa7.jpg" data-caption="Cocoa Processing" aria-label="View Cocoa Processing">
+              <img src="public/images/turnkey-projects/cocoa-powder-processing/cocoa7.jpg" alt="Thumbnail 2" loading="lazy" />
+            </button>
+            <button class="rcp-gallery__thumb" data-src="public/images/turnkey-projects/cocoa-powder-processing/cocoa3.jpg" data-caption="Quality Inspection" aria-label="View Quality Inspection">
+              <img src="public/images/turnkey-projects/cocoa-powder-processing/cocoa3.jpg" alt="Thumbnail 3" loading="lazy" />
+            </button>
+            <button class="rcp-gallery__thumb" data-src="public/images/turnkey-projects/cocoa-powder-processing/cocoa4.jpg" data-caption="Equipment Maintenance" aria-label="View Equipment Maintenance">
+              <img src="public/images/turnkey-projects/cocoa-powder-processing/cocoa4.jpg" alt="Thumbnail 4" loading="lazy" />
+            </button>
+            <button class="rcp-gallery__thumb" data-src="public/images/turnkey-projects/cocoa-powder-processing/cocoa5.jpg" data-caption="Lab Testing" aria-label="View Lab Testing">
+              <img src="public/images/turnkey-projects/cocoa-powder-processing/cocoa5.jpg" alt="Thumbnail 5" loading="lazy" />
+            </button>
+            <button class="rcp-gallery__thumb" data-src="public/images/turnkey-projects/cocoa-powder-processing/cocoa6.jpg" data-caption="Production Monitoring" aria-label="View Production Monitoring">
+              <img src="public/images/turnkey-projects/cocoa-powder-processing/cocoa6.jpg" alt="Thumbnail 6" loading="lazy" />
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- WHY CHOOSE -->
+    <section class="rcp-section rcp-why-choose" id="why-choose" data-animate style="background:var(--rcp-slate-50)">
+      <div class="rcp-container rcp-animate">
+        <div class="rcp-section-badge">Why Choose Us</div>
+        <h2 class="rcp-section-title">Why Choose <span class="rcp-accent">Hike Consultancy</span></h2>
+        <div class="rcp-machinery__grid" style="margin-top:40px;">
+          <div class="rcp-machine-card" style="padding:32px 24px;text-align:center;border:1px solid var(--rcp-slate-200);background:#fff;border-radius:12px;box-shadow:0 4px 12px rgba(0,0,0,0.02);"><div style="width:50px;height:50px;background:rgba(76,175,80,0.1);color:var(--rcp-orange);border-radius:50%;display:flex;align-items:center;justify-content:center;margin:0 auto 16px;"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="width:24px;height:24px;"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path><polyline points="22 4 12 14.01 9 11.01"></polyline></svg></div><h3 class="rcp-machine-card__title" style="margin-bottom:12px;font-size:18px;">Cocoa Processing Expertise</h3><p class="rcp-machine-card__desc" style="color:var(--rcp-slate-600);font-size:14px;line-height:1.5;">Deep knowledge in cocoa bean processing from raw material to finished powder products.</p></div>
+          <div class="rcp-machine-card" style="padding:32px 24px;text-align:center;border:1px solid var(--rcp-slate-200);background:#fff;border-radius:12px;box-shadow:0 4px 12px rgba(0,0,0,0.02);"><div style="width:50px;height:50px;background:rgba(76,175,80,0.1);color:var(--rcp-orange);border-radius:50%;display:flex;align-items:center;justify-content:center;margin:0 auto 16px;"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="width:24px;height:24px;"><path d="M12 20v-6M6 20V10M18 20V4"></path></svg></div><h3 class="rcp-machine-card__title" style="margin-bottom:12px;font-size:18px;">Global Market Insight</h3><p class="rcp-machine-card__desc" style="color:var(--rcp-slate-600);font-size:14px;line-height:1.5;">Understanding of international cocoa ingredient market trends, pricing, and buyer requirements.</p></div>
+          <div class="rcp-machine-card" style="padding:32px 24px;text-align:center;border:1px solid var(--rcp-slate-200);background:#fff;border-radius:12px;box-shadow:0 4px 12px rgba(0,0,0,0.02);"><div style="width:50px;height:50px;background:rgba(76,175,80,0.1);color:var(--rcp-orange);border-radius:50%;display:flex;align-items:center;justify-content:center;margin:0 auto 16px;"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="width:24px;height:24px;"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path><circle cx="9" cy="7" r="4"></circle><path d="M23 21v-2a4 4 0 0 0-3-3.87"></path><path d="M16 3.13a4 4 0 0 1 0 7.75"></path></svg></div><h3 class="rcp-machine-card__title" style="margin-bottom:12px;font-size:18px;">Startup-Friendly Guidance</h3><p class="rcp-machine-card__desc" style="color:var(--rcp-slate-600);font-size:14px;line-height:1.5;">Support for new entrants to cocoa processing from concept to commercial production.</p></div>
+          <div class="rcp-machine-card" style="padding:32px 24px;text-align:center;border:1px solid var(--rcp-slate-200);background:#fff;border-radius:12px;box-shadow:0 4px 12px rgba(0,0,0,0.02);"><div style="width:50px;height:50px;background:rgba(76,175,80,0.1);color:var(--rcp-orange);border-radius:50%;display:flex;align-items:center;justify-content:center;margin:0 auto 16px;"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="width:24px;height:24px;"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline></svg></div><h3 class="rcp-machine-card__title" style="margin-bottom:12px;font-size:18px;">Regulatory Knowledge</h3><p class="rcp-machine-card__desc" style="color:var(--rcp-slate-600);font-size:14px;line-height:1.5;">FSSAI, FDA, EU, EUDR, and organic certification compliance expertise.</p></div>
+          <div class="rcp-machine-card" style="padding:32px 24px;text-align:center;border:1px solid var(--rcp-slate-200);background:#fff;border-radius:12px;box-shadow:0 4px 12px rgba(0,0,0,0.02);"><div style="width:50px;height:50px;background:rgba(76,175,80,0.1);color:var(--rcp-orange);border-radius:50%;display:flex;align-items:center;justify-content:center;margin:0 auto 16px;"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="width:24px;height:24px;"><polygon points="12 2 2 7 12 12 22 7 12 2"></polygon><polyline points="2 17 12 22 22 17"></polyline><polyline points="2 12 12 17 22 12"></polyline></svg></div><h3 class="rcp-machine-card__title" style="margin-bottom:12px;font-size:18px;">Implementation Support</h3><p class="rcp-machine-card__desc" style="color:var(--rcp-slate-600);font-size:14px;line-height:1.5;">Hands-on support from plant commissioning to first production batch quality approval.</p></div>
+          <div class="rcp-machine-card" style="padding:32px 24px;text-align:center;border:1px solid var(--rcp-slate-200);background:#fff;border-radius:12px;box-shadow:0 4px 12px rgba(0,0,0,0.02);"><div style="width:50px;height:50px;background:rgba(76,175,80,0.1);color:var(--rcp-orange);border-radius:50%;display:flex;align-items:center;justify-content:center;margin:0 auto 16px;"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="width:24px;height:24px;"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg></div><h3 class="rcp-machine-card__title" style="margin-bottom:12px;font-size:18px;">Long-Term Partnership</h3><p class="rcp-machine-card__desc" style="color:var(--rcp-slate-600);font-size:14px;line-height:1.5;">Ongoing support for product diversification into cocoa butter, nibs, and specialty products.</p></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="rcp-section rcp-cta" id="enquiry" data-animate>
+      <div class="rcp-container rcp-animate">
+        <div class="rcp-cta__box">
+          <h2>Ready to Build Your Cocoa Powder Processing Business?</h2>
+          <p>Connect with Hike's consultancy experts and get professional guidance for planning, launching, and scaling your cocoa powder processing venture.</p>
+          <div class="rcp-cta__actions"><a href="contact.html" class="rcp-btn rcp-btn--primary rcp-btn--lg">Book Consultation</a><a href="contact.html" class="rcp-btn rcp-btn--outline rcp-btn--lg">Contact Us</a></div>
+        </div>
+      </div>
+    </section>
+
+    <div class="rcp-back-nav" style="text-align:center;padding:40px 0;">
+      <a href="projects.html" class="rcp-btn rcp-btn--outline"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" style="width:14px;height:14px;margin-right:6px;vertical-align:middle;display:inline-block;"><line x1="19" y1="12" x2="5" y2="12"></line><polyline points="12 19 5 12 12 5"></polyline></svg>Back to Project Portfolio</a>
+    </div>
+  </div></main>
+
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      const observer = new IntersectionObserver((entries) => { entries.forEach((entry) => { if (entry.isIntersecting) { const t = entry.target.querySelector('.rcp-animate'); if (t) t.classList.add('rcp-animate--in'); } }); }, { threshold: 0.1, rootMargin: '0px 0px -50px 0px' });
+      document.querySelectorAll('[data-animate]').forEach((s) => observer.observe(s));
+      const mobileToggle = document.getElementById('mobileToggle'); const navMenu = document.getElementById('navMenu');
+      if (mobileToggle && navMenu) { mobileToggle.addEventListener('click', () => { mobileToggle.classList.toggle('active'); navMenu.classList.toggle('active'); document.body.classList.toggle('menu-open'); }); }
+      
+      // Gallery Logic
+      const galleryThumbs = document.querySelectorAll('.rcp-gallery__thumb');
+      const mainImg = document.getElementById('mainGalleryImg');
+      const mainCaption = document.getElementById('mainGalleryCaption');
+      
+      let currentIndex = 0;
+      let slideInterval;
+
+      function showImage(index) {
+          galleryThumbs.forEach(t => t.classList.remove('rcp-gallery__thumb--active'));
+          const thumb = galleryThumbs[index];
+          thumb.classList.add('rcp-gallery__thumb--active');
+          
+          const src = thumb.getAttribute('data-src');
+          const caption = thumb.getAttribute('data-caption');
+          
+          mainImg.style.opacity = '0';
+          setTimeout(() => {
+              mainImg.src = src;
+              mainImg.alt = caption;
+              if(mainCaption) mainCaption.textContent = caption;
+              mainImg.style.opacity = '1';
+          }, 400); 
+      }
+
+      function nextImage() {
+          if (galleryThumbs.length === 0) return;
+          currentIndex = (currentIndex + 1) % galleryThumbs.length;
+          showImage(currentIndex);
+      }
+
+      function startSlideshow() {
+          if (!slideInterval) {
+              slideInterval = setInterval(nextImage, 3000);
+          }
+      }
+
+      function stopSlideshow() {
+          clearInterval(slideInterval);
+          slideInterval = null;
+      }
+
+      galleryThumbs.forEach((thumb, index) => {
+          thumb.addEventListener('click', function() {
+              currentIndex = index;
+              showImage(currentIndex);
+              stopSlideshow();
+              startSlideshow(); // restart interval
+          });
+      });
+
+      // Optional: stop on hover
+      const gallerySection = document.querySelector('.rcp-gallery__showcase');
+      if(gallerySection) {
+          gallerySection.addEventListener('mouseenter', stopSlideshow);
+          gallerySection.addEventListener('mouseleave', startSlideshow);
+      }
+
+      // Start initial slideshow
+      startSlideshow();
+    });
+  </script>
+</body>
+<footer class="main-footer">
+  <div class="container footer-container">
+    <div class="footer-col brand-col"><a href="index.html" class="footer-logo"><img src="assets/logo.png" alt="Hike Logo" class="footer-logo-img"></a><p class="footer-brand-desc">Hike is your trusted partner for end-to-end food & beverage business consulting.</p></div>
+    <div class="footer-col links-col"><h4 class="footer-col-title">Navigation</h4><ul class="footer-link-list"><li><a href="index.html">Home</a></li><li><a href="about.html">About Us</a></li><li><a href="projects.html">Projects</a></li><li><a href="contact.html">Contact Us</a></li></ul></div>
+    <div class="footer-col links-col"><h4 class="footer-col-title">Our Services</h4><ul class="footer-link-list"><li><a href="product-development.html">Product Development</a></li><li><a href="manufacturing-setup.html">Manufacturing Setup</a></li><li><a href="regulatory-compliance.html">Regulatory Compliance</a></li><li><a href="market-expansion.html">Market Expansion</a></li></ul></div>
+    <div class="footer-col contact-col"><h4 class="footer-col-title">Contact Us</h4><ul class="footer-contact-list"><li class="contact-item"><svg class="contact-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg><span>210, Arved Transcube Mall, Ahmedabad, Gujarat 382480</span></li></ul></div>
+  </div>
+  <div class="footer-bottom"><p class="footer-copy">&copy; 2025 Hike Consulting. All rights reserved.</p></div>
+</footer>
+</html>
