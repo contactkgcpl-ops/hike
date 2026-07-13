@@ -1,0 +1,1352 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Hike - Premium Food & Beverage Consulting Projects.">
+    <title>Hike | Premium Projects</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Outfit:wght@500;600;700;800&display=swap"
+        rel="stylesheet">
+    <!-- CSS Stylesheet -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#1A5336',
+                        accent: '#4CAF50',
+                        dark: '#121212',
+                        light: '#F8F9FA'
+                    },
+                    fontFamily: {
+                        heading: ['Outfit', 'sans-serif'],
+                        body: ['Inter', 'sans-serif']
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+
+<body>
+
+    <!-- Header Navigation -->
+    <header class="main-header" id="mainHeader">
+        <div class="container header-container">
+            <!-- Brand Logo -->
+            <a href="#" class="logo" aria-label="Hike Home">
+                <img src="assets/logo.png" alt="Hike Logo" class="logo-img">
+            </a>
+
+            <!-- Desktop Nav Menu -->
+            <nav class="nav-menu" id="navMenu">
+                <ul class="nav-list">
+                    <li><a href="index.html" class="nav-link">Home</a></li>
+                    <li><a href="about.html" class="nav-link">About Us</a></li>
+                    <li><a href="projects.html" class="nav-link active">Projects</a></li>
+                    <li class="dropdown">
+                        <a href="#" class="nav-link dropdown-toggle" id="servicesToggle">
+                            Services
+                            <svg class="dropdown-arrow" viewBox="0 0 24 24" width="16" height="16">
+                                <path d="M6 9l6 6 6-6" fill="none" stroke="currentColor" stroke-width="2"
+                                    stroke-linecap="round" stroke-linejoin="round" />
+                            </svg>
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a href="product-development.html">Product Development</a></li>
+                            <li><a href="manufacturing-setup.html">Manufacturing Setup</a></li>
+                            <li><a href="regulatory-compliance.html">Regulatory Compliance</a></li>
+                            <li><a href="contract-manufacturing.html">Contract Manufacturing</a></li>
+                            <li><a href="market-expansion.html">Market Expansion</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="index.html#industries" class="nav-link">Industries</a></li>
+                    <li><a href="case-studies.html" class="nav-link">Case Studies</a></li>
+                    <li><a href="contact.html" class="nav-link">Contact Us</a></li>
+                </ul>
+            </nav>
+
+            <!-- Header CTA -->
+            <div class="header-cta">
+                <a href="contact.html" class="btn btn-consultation-header" id="headerConsultBtn">
+                    <span>Book Free Consultation</span>
+                    <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2"
+                        stroke-linecap="round" stroke-linejoin="round">
+                        <rect x="3" y="4" width="18" height="18" rx="2" ry="2" />
+                        <line x1="16" y1="2" x2="16" y2="6" />
+                        <line x1="8" y1="2" x2="8" y2="6" />
+                        <line x1="3" y1="10" x2="21" y2="10" />
+                    </svg>
+                </a>
+            </div>
+
+            <!-- Hamburger Button for Mobile -->
+            <button class="mobile-toggle" id="mobileToggle" aria-label="Toggle Menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </button>
+        </div>
+    </header>
+
+    <main id="main-content">
+
+    <div class="projects-page-wrapper font-body bg-white text-gray-900 selection:bg-accent selection:text-white">
+        
+        <section class="relative pt-32 pb-20 overflow-hidden bg-gray-900 border-b border-gray-100">
+            <div class="absolute inset-0 z-0">
+                <img src="assets/hero_manufacturing.png" alt="Premium Manufacturing Facility" class="w-full h-full object-cover" />
+                <div class="absolute inset-0 bg-black/70"></div>
+            </div>
+            
+            <div class="container relative z-10 mx-auto px-6 max-w-7xl text-center">
+                <span class="inline-block text-accent font-heading font-bold tracking-[0.2em] mb-6 text-xs uppercase animate-fade-in-up">
+                    Our Projects
+                </span>
+                
+                <h1 class="text-4xl md:text-5xl lg:text-6xl font-heading font-extrabold text-white leading-tight mb-8 animate-fade-in-up delay-100">
+                    Transforming Ideas Into <br class="hidden md:block" />
+                    <span class="text-transparent bg-clip-text bg-gradient-to-r from-primary to-accent">Scalable Ventures</span>
+                </h1>
+                
+                <p class="text-lg text-white/90 leading-relaxed mb-12 max-w-4xl mx-auto animate-fade-in-up font-medium delay-200">
+                    We partner with visionary founders and established brands to engineer end-to-end food processing facilities and launch market-leading products.
+                </p>
+                
+                <div class="flex flex-col sm:flex-row justify-center gap-6 animate-fade-in-up delay-300">
+                    <a href="contact.html" class="inline-flex items-center justify-center px-10 py-5 bg-primary hover:bg-accent text-white font-heading font-bold text-lg rounded-lg transition-all shadow-xl hover:shadow-2xl hover:-translate-y-1">
+                        Book Free Consultation
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <section class="py-16 bg-gray-50/30">
+            <div class="container mx-auto px-6 max-w-7xl">
+                <div class="text-center mb-12 max-w-3xl mx-auto">
+                    <span class="text-accent font-heading font-bold tracking-[0.2em] uppercase text-xs mb-3 block">Strategic Solutions</span>
+                    <h2 class="text-3xl md:text-4xl font-heading font-extrabold text-gray-900 leading-tight">
+                        Helping Food Businesses Scale With <br class="hidden md:block" />
+                        Confidence
+                    </h2>
+                </div>
+
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                    
+                        <div class="group p-8 bg-gradient-to-br from-white to-green-50/20 rounded-2xl shadow-lg border border-green-100 hover:border-green-300 hover:shadow-2xl transition-all duration-500 hover:-translate-y-2 flex flex-col relative overflow-hidden">
+                            <div class="absolute top-0 right-0 w-32 h-32 bg-gradient-to-br from-accent/5 to-primary/5 rounded-bl-[100px] -z-10 transition-transform duration-500 group-hover:scale-110"></div>
+                            
+                            <span class="text-gray-500 font-heading font-bold tracking-widest uppercase text-xs mb-3 block group-hover:text-accent transition-colors relative z-10">
+                                THE CHALLENGE: PRODUCT DEVELOPMENT
+                            </span>
+                            <h3 class="text-xl font-heading font-extrabold text-gray-900 mb-3 leading-snug relative z-10">
+                                Innovation & Development
+                            </h3>
+                            <p class="text-base text-gray-700 leading-relaxed mb-6 flex-grow relative z-10">
+                                Formulation, trials, packaging, and commercialization for market-ready products.
+                            </p>
+                            <a href="product-development.html" class="inline-flex items-center text-primary font-heading font-bold text-lg hover:text-accent transition-colors group/btn before:absolute before:inset-0 before:z-0">
+                                Explore Solutions
+                                <svg class="w-6 h-6 ml-2 transform transition-transform group-hover/btn:translate-x-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M17 8l4 4m0 0l-4 4m4-4H3"></path>
+                                </svg>
+                            </a>
+                        </div>
+                    
+                        <div class="group p-8 bg-gradient-to-br from-white to-green-50/20 rounded-2xl shadow-lg border border-green-100 hover:border-green-300 hover:shadow-2xl transition-all duration-500 hover:-translate-y-2 flex flex-col relative overflow-hidden">
+                            <div class="absolute top-0 right-0 w-32 h-32 bg-gradient-to-br from-accent/5 to-primary/5 rounded-bl-[100px] -z-10 transition-transform duration-500 group-hover:scale-110"></div>
+                            
+                            <span class="text-gray-500 font-heading font-bold tracking-widest uppercase text-xs mb-3 block group-hover:text-accent transition-colors relative z-10">
+                                THE CHALLENGE: MANUFACTURING COMPLEXITY
+                            </span>
+                            <h3 class="text-xl font-heading font-extrabold text-gray-900 mb-3 leading-snug relative z-10">
+                                Setup & Expansion
+                            </h3>
+                            <p class="text-base text-gray-700 leading-relaxed mb-6 flex-grow relative z-10">
+                                End-to-end execution for setting up or expanding food manufacturing facilities.
+                            </p>
+                            <a href="manufacturing-setup.html" class="inline-flex items-center text-primary font-heading font-bold text-lg hover:text-accent transition-colors group/btn before:absolute before:inset-0 before:z-0">
+                                View Services
+                                <svg class="w-6 h-6 ml-2 transform transition-transform group-hover/btn:translate-x-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M17 8l4 4m0 0l-4 4m4-4H3"></path>
+                                </svg>
+                            </a>
+                        </div>
+                    
+                        <div class="group p-8 bg-gradient-to-br from-white to-green-50/20 rounded-2xl shadow-lg border border-green-100 hover:border-green-300 hover:shadow-2xl transition-all duration-500 hover:-translate-y-2 flex flex-col relative overflow-hidden">
+                            <div class="absolute top-0 right-0 w-32 h-32 bg-gradient-to-br from-accent/5 to-primary/5 rounded-bl-[100px] -z-10 transition-transform duration-500 group-hover:scale-110"></div>
+                            
+                            <span class="text-gray-500 font-heading font-bold tracking-widest uppercase text-xs mb-3 block group-hover:text-accent transition-colors relative z-10">
+                                THE CHALLENGE: BUSINESS GROWTH
+                            </span>
+                            <h3 class="text-xl font-heading font-extrabold text-gray-900 mb-3 leading-snug relative z-10">
+                                Market Strategy
+                            </h3>
+                            <p class="text-base text-gray-700 leading-relaxed mb-6 flex-grow relative z-10">
+                                Market positioning, distribution planning, and strategic regulatory support.
+                            </p>
+                            <a href="market-expansion.html" class="inline-flex items-center text-primary font-heading font-bold text-lg hover:text-accent transition-colors group/btn before:absolute before:inset-0 before:z-0">
+                                Learn More
+                                <svg class="w-6 h-6 ml-2 transform transition-transform group-hover/btn:translate-x-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M17 8l4 4m0 0l-4 4m4-4H3"></path>
+                                </svg>
+                            </a>
+                        </div>
+                    
+                </div>
+            </div>
+        </section>
+
+        <section class="pt-20 pb-8 md:pb-10 bg-white border-t border-gray-100">
+            <div class="container mx-auto px-6 max-w-4xl text-center">
+                <span class="inline-block text-accent font-heading font-bold tracking-[0.2em] uppercase text-xs mb-4">
+                    Project Portfolio
+                </span>
+                <h2 class="text-3xl md:text-4xl font-heading font-extrabold text-gray-900 leading-tight mb-6">
+                    Building Successful Food Businesses
+                </h2>
+                <p class="text-base md:text-lg text-gray-700 leading-relaxed font-medium mx-auto max-w-3xl">
+                    At Hike, we help startups, food brands, manufacturers, and investors build scalable food businesses through product development, manufacturing planning, regulatory compliance, and growth strategy.
+                </p>
+            </div>
+        </section>
+
+        <section class="pb-20 pt-10 md:pt-12 bg-white">
+            <div class="container mx-auto px-6 max-w-7xl">
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    
+                        <div class="bg-white rounded-2xl shadow-[0_4px_20px_rgb(0,0,0,0.05)] hover:shadow-[0_8px_30px_rgb(0,0,0,0.08)] border border-gray-100 flex flex-col transition-all duration-300 overflow-hidden group">
+                            <div class="h-[250px] p-2 flex justify-center items-center bg-white border-b border-gray-50">
+                                <img src="assets/images/projects/red_chilli_processing.jpg" alt="Red Chilli Processing Plant" class="w-[95%] h-full object-contain mx-auto" />
+                            </div>
+                            <div class="p-6 flex flex-col flex-grow bg-white">
+                                <h3 style="font-size: 20px; font-weight: 800; color: #0c2340; line-height: 1.3; margin-bottom: 12px;" class="line-clamp-2">
+                                    Red Chilli Processing Plant Consultancy
+                                </h3>
+                                <p style="font-size: 16px; line-height: 1.7;" class="text-gray-600 mb-6 flex-grow">
+                                    Complete consultancy for setting up a red chilli powder processing business.
+                                </p>
+                                <a href="red-chilli-consultancy.html" class="more-details-btn mt-auto">
+                                    <span class="btn-icon">
+                                        <svg fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M14 5l7 7m0 0l-7 7m7-7H3"></path>
+                                        </svg>
+                                    </span>
+                                    <span class="btn-text">MORE DETAILS</span>
+                                    <span style="width: 70px; flex-shrink: 0;"></span>
+                                </a>
+                            </div>
+                        </div>
+                    
+                                                <div class="bg-white rounded-2xl shadow-[0_4px_20px_rgb(0,0,0,0.05)] hover:shadow-[0_8px_30px_rgb(0,0,0,0.08)] border border-gray-100 flex flex-col transition-all duration-300 overflow-hidden group">
+                            <div class="h-[250px] p-2 flex justify-center items-center bg-white border-b border-gray-50">
+                                <img src="assets/images/projects/beetroot_juice_processing.jpg" alt="Beetroot Juice Processing Plant Consultancy" class="w-[95%] h-full object-contain mx-auto" />
+                            </div>
+                            <div class="p-6 flex flex-col flex-grow bg-white">
+                                <h3 style="font-size: 20px; font-weight: 800; color: #0c2340; line-height: 1.3; margin-bottom: 12px;" class="line-clamp-2">
+                                    Beetroot Juice Processing Plant Consultancy
+                                </h3>
+                                <p style="font-size: 16px; line-height: 1.7;" class="text-gray-600 mb-6 flex-grow">
+                                    Complete consultancy for setting up a beetroot juice processing business.
+                                </p>
+                                <a href="beetroot-juice-consultancy.html" class="more-details-btn mt-auto">
+                                    <span class="btn-icon">
+                                        <svg fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M14 5l7 7m0 0l-7 7m7-7H3"></path>
+                                        </svg>
+                                    </span>
+                                    <span class="btn-text">MORE DETAILS</span>
+                                    <span style="width: 70px; flex-shrink: 0;"></span>
+                                </a>
+                            </div>
+                        </div>
+                    
+                        <div class="bg-white rounded-2xl shadow-[0_4px_20px_rgb(0,0,0,0.05)] hover:shadow-[0_8px_30px_rgb(0,0,0,0.08)] border border-gray-100 flex flex-col transition-all duration-300 overflow-hidden group">
+                            <div class="h-[250px] p-2 flex justify-center items-center bg-white border-b border-gray-50">
+                                <img src="assets/images/projects/turmeric_powder_processing.jpg" alt="Turmeric Powder Processing Plant" class="w-[95%] h-full object-contain mx-auto" />
+                            </div>
+                            <div class="p-6 flex flex-col flex-grow bg-white">
+                                <h3 style="font-size: 20px; font-weight: 800; color: #0c2340; line-height: 1.3; margin-bottom: 12px;" class="line-clamp-2">
+                                    Turmeric Powder Processing Plant Consultancy
+                                </h3>
+                                <p style="font-size: 16px; line-height: 1.7;" class="text-gray-600 mb-6 flex-grow">
+                                    Complete consultancy for setting up a turmeric powder processing business.
+                                </p>
+                                <a href="turmeric-powder-consultancy.html" class="more-details-btn mt-auto">
+                                    <span class="btn-icon">
+                                        <svg fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M14 5l7 7m0 0l-7 7m7-7H3"></path>
+                                        </svg>
+                                    </span>
+                                    <span class="btn-text">MORE DETAILS</span>
+                                    <span style="width: 70px; flex-shrink: 0;"></span>
+                                </a>
+                            </div>
+                        </div>
+                    
+                        <div class="bg-white rounded-2xl shadow-[0_4px_20px_rgb(0,0,0,0.05)] hover:shadow-[0_8px_30px_rgb(0,0,0,0.08)] border border-gray-100 flex flex-col transition-all duration-300 overflow-hidden group">
+                            <div class="h-[250px] p-2 flex justify-center items-center bg-white border-b border-gray-50">
+                                <img src="assets/images/projects/honey_processing_plant.jpg" alt="Fully Automated Honey Processing Plant" class="w-[95%] h-full object-contain mx-auto" />
+                            </div>
+                            <div class="p-6 flex flex-col flex-grow bg-white">
+                                <h3 style="font-size: 20px; font-weight: 800; color: #0c2340; line-height: 1.3; margin-bottom: 12px;" class="line-clamp-2">
+                                    Fully Automated Honey Processing Plant Consultancy
+                                </h3>
+                                <p style="font-size: 16px; line-height: 1.7;" class="text-gray-600 mb-6 flex-grow">
+                                    Complete consultancy for setting up a fully automated honey processing business.
+                                </p>
+                                <a href="honey-processing-consultancy.html" class="more-details-btn mt-auto">
+                                    <span class="btn-icon">
+                                        <svg fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M14 5l7 7m0 0l-7 7m7-7H3"></path>
+                                        </svg>
+                                    </span>
+                                    <span class="btn-text">MORE DETAILS</span>
+                                    <span style="width: 70px; flex-shrink: 0;"></span>
+                                </a>
+                            </div>
+                        </div>
+                    
+                        <div class="bg-white rounded-2xl shadow-[0_4px_20px_rgb(0,0,0,0.05)] hover:shadow-[0_8px_30px_rgb(0,0,0,0.08)] border border-gray-100 flex flex-col transition-all duration-300 overflow-hidden group">
+                            <div class="h-[250px] p-2 flex justify-center items-center bg-white border-b border-gray-50">
+                                <img src="assets/images/projects/dates_processing_plant.jpg" alt="Dates Processing Plant" class="w-[95%] h-full object-contain mx-auto" />
+                            </div>
+                            <div class="p-6 flex flex-col flex-grow bg-white">
+                                <h3 style="font-size: 20px; font-weight: 800; color: #0c2340; line-height: 1.3; margin-bottom: 12px;" class="line-clamp-2">
+                                    Dates Processing Plant Consultancy
+                                </h3>
+                                <p style="font-size: 16px; line-height: 1.7;" class="text-gray-600 mb-6 flex-grow">
+                                    Complete consultancy for setting up a dates processing business.
+                                </p>
+                                <a href="dates-processing-consultancy.html" class="more-details-btn mt-auto">
+                                    <span class="btn-icon">
+                                        <svg fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M14 5l7 7m0 0l-7 7m7-7H3"></path>
+                                        </svg>
+                                    </span>
+                                    <span class="btn-text">MORE DETAILS</span>
+                                    <span style="width: 70px; flex-shrink: 0;"></span>
+                                </a>
+                            </div>
+                        </div>
+                    
+                        <div class="bg-white rounded-2xl shadow-[0_4px_20px_rgb(0,0,0,0.05)] hover:shadow-[0_8px_30px_rgb(0,0,0,0.08)] border border-gray-100 flex flex-col transition-all duration-300 overflow-hidden group">
+                            <div class="h-[250px] p-2 flex justify-center items-center bg-white border-b border-gray-50">
+                                <img src="assets/images/projects/jackfruit_canning_plant.jpg" alt="Jackfruit Canning Line Plant" class="w-[95%] h-full object-contain mx-auto" />
+                            </div>
+                            <div class="p-6 flex flex-col flex-grow bg-white">
+                                <h3 style="font-size: 20px; font-weight: 800; color: #0c2340; line-height: 1.3; margin-bottom: 12px;" class="line-clamp-2">
+                                    Jackfruit Canning Line Plant Consultancy
+                                </h3>
+                                <p style="font-size: 16px; line-height: 1.7;" class="text-gray-600 mb-6 flex-grow">
+                                    Complete consultancy for setting up a jackfruit canning line business.
+                                </p>
+                                <a href="jackfruit-canning-consultancy.html" class="more-details-btn mt-auto">
+                                    <span class="btn-icon">
+                                        <svg fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M14 5l7 7m0 0l-7 7m7-7H3"></path>
+                                        </svg>
+                                    </span>
+                                    <span class="btn-text">MORE DETAILS</span>
+                                    <span style="width: 70px; flex-shrink: 0;"></span>
+                                </a>
+                            </div>
+                        </div>
+                    
+                        <div class="bg-white rounded-2xl shadow-[0_4px_20px_rgb(0,0,0,0.05)] hover:shadow-[0_8px_30px_rgb(0,0,0,0.08)] border border-gray-100 flex flex-col transition-all duration-300 overflow-hidden group">
+                            <div class="h-[250px] p-2 flex justify-center items-center bg-white border-b border-gray-50">
+                                <img src="assets/images/projects/automatic_pasta_making_plant.jpg" alt="Automatic Pasta Making Plant" class="w-[95%] h-full object-contain mx-auto" />
+                            </div>
+                            <div class="p-6 flex flex-col flex-grow bg-white">
+                                <h3 style="font-size: 20px; font-weight: 800; color: #0c2340; line-height: 1.3; margin-bottom: 12px;" class="line-clamp-2">
+                                    Automatic Pasta Making Plant Consultancy
+                                </h3>
+                                <p style="font-size: 16px; line-height: 1.7;" class="text-gray-600 mb-6 flex-grow">
+                                    Complete consultancy for setting up a fully automated pasta manufacturing business.
+                                </p>
+                                <a href="automatic-pasta-making-consultancy.html" class="more-details-btn mt-auto">
+                                    <span class="btn-icon">
+                                        <svg fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M14 5l7 7m0 0l-7 7m7-7H3"></path>
+                                        </svg>
+                                    </span>
+                                    <span class="btn-text">MORE DETAILS</span>
+                                    <span style="width: 70px; flex-shrink: 0;"></span>
+                                </a>
+                            </div>
+                        </div>
+                    
+                        <div class="bg-white rounded-2xl shadow-[0_4px_20px_rgb(0,0,0,0.05)] hover:shadow-[0_8px_30px_rgb(0,0,0,0.08)] border border-gray-100 flex flex-col transition-all duration-300 overflow-hidden group">
+                            <div class="h-[250px] p-2 flex justify-center items-center bg-white border-b border-gray-50">
+                                <img src="assets/images/projects/peanut_butter_making_plant.jpg" alt="Peanut Butter Making Plant" class="w-[95%] h-full object-contain mx-auto" />
+                            </div>
+                            <div class="p-6 flex flex-col flex-grow bg-white">
+                                <h3 style="font-size: 20px; font-weight: 800; color: #0c2340; line-height: 1.3; margin-bottom: 12px;" class="line-clamp-2">
+                                    Peanut Butter Making Plant Consultancy
+                                </h3>
+                                <p style="font-size: 16px; line-height: 1.7;" class="text-gray-600 mb-6 flex-grow">
+                                    Complete consultancy for setting up an end-to-end peanut butter manufacturing plant.
+                                </p>
+                                <a href="peanut-butter-making-consultancy.html" class="more-details-btn mt-auto">
+                                    <span class="btn-icon">
+                                        <svg fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M14 5l7 7m0 0l-7 7m7-7H3"></path>
+                                        </svg>
+                                    </span>
+                                    <span class="btn-text">MORE DETAILS</span>
+                                    <span style="width: 70px; flex-shrink: 0;"></span>
+                                </a>
+                            </div>
+                        </div>
+                    
+                        <div class="bg-white rounded-2xl shadow-[0_4px_20px_rgb(0,0,0,0.05)] hover:shadow-[0_8px_30px_rgb(0,0,0,0.08)] border border-gray-100 flex flex-col transition-all duration-300 overflow-hidden group">
+                            <div class="h-[250px] p-2 flex justify-center items-center bg-white border-b border-gray-50">
+                                <img src="assets/images/projects/ginger_garlic_paste_plant.jpg" alt="Ginger Garlic Paste Plant" class="w-[95%] h-full object-contain mx-auto" />
+                            </div>
+                            <div class="p-6 flex flex-col flex-grow bg-white">
+                                <h3 style="font-size: 20px; font-weight: 800; color: #0c2340; line-height: 1.3; margin-bottom: 12px;" class="line-clamp-2">
+                                    Ginger Garlic Paste Plant Consultancy
+                                </h3>
+                                <p style="font-size: 16px; line-height: 1.7;" class="text-gray-600 mb-6 flex-grow">
+                                    Complete turnkey consultancy for setting up commercial ginger garlic paste processing plants.
+                                </p>
+                                <a href="ginger-garlic-paste-consultancy.html" class="more-details-btn mt-auto">
+                                    <span class="btn-icon">
+                                        <svg fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M14 5l7 7m0 0l-7 7m7-7H3"></path>
+                                        </svg>
+                                    </span>
+                                    <span class="btn-text">MORE DETAILS</span>
+                                    <span style="width: 70px; flex-shrink: 0;"></span>
+                                </a>
+                            </div>
+                        </div>
+                    
+                        <div class="bg-white rounded-2xl shadow-[0_4px_20px_rgb(0,0,0,0.05)] hover:shadow-[0_8px_30px_rgb(0,0,0,0.08)] border border-gray-100 flex flex-col transition-all duration-300 overflow-hidden group">
+                            <div class="h-[250px] p-2 flex justify-center items-center bg-white border-b border-gray-50">
+                                <img src="assets/images/projects/black_pepper_powder_plant.jpg" alt="Black Pepper Powder Processing Plant" class="w-[95%] h-full object-contain mx-auto" />
+                            </div>
+                            <div class="p-6 flex flex-col flex-grow bg-white">
+                                <h3 style="font-size: 20px; font-weight: 800; color: #0c2340; line-height: 1.3; margin-bottom: 12px;" class="line-clamp-2">
+                                    Black Pepper Powder Processing Plant Consultancy
+                                </h3>
+                                <p style="font-size: 16px; line-height: 1.7;" class="text-gray-600 mb-6 flex-grow">
+                                    Complete consultancy for setting up a black pepper powder processing business.
+                                </p>
+                                <a href="black-pepper-powder-consultancy.html" class="more-details-btn mt-auto">
+                                    <span class="btn-icon">
+                                        <svg fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M14 5l7 7m0 0l-7 7m7-7H3"></path>
+                                        </svg>
+                                    </span>
+                                    <span class="btn-text">MORE DETAILS</span>
+                                    <span style="width: 70px; flex-shrink: 0;"></span>
+                                </a>
+                            </div>
+                        </div>
+                    
+                        <div class="bg-white rounded-2xl shadow-[0_4px_20px_rgb(0,0,0,0.05)] hover:shadow-[0_8px_30px_rgb(0,0,0,0.08)] border border-gray-100 flex flex-col transition-all duration-300 overflow-hidden group">
+                            <div class="h-[250px] p-2 flex justify-center items-center bg-white border-b border-gray-50">
+                                <img src="assets/images/projects/seed_cleaning_sorting_plant.jpg" alt="Seed / Cumin / Pulses Cleaning & Sorting Plant" class="w-[95%] h-full object-contain mx-auto" />
+                            </div>
+                            <div class="p-6 flex flex-col flex-grow bg-white">
+                                <h3 style="font-size: 20px; font-weight: 800; color: #0c2340; line-height: 1.3; margin-bottom: 12px;" class="line-clamp-2">
+                                    Seed / Cumin / Pulses Cleaning &amp; Sorting Plant Consultancy
+                                </h3>
+                                <p style="font-size: 16px; line-height: 1.7;" class="text-gray-600 mb-6 flex-grow">
+                                    Complete consultancy for setting up a seed, cumin, and pulses cleaning &amp; sorting business.
+                                </p>
+                                <a href="seed-cumin-pulses-cleaning-consultancy.html" class="more-details-btn mt-auto">
+                                    <span class="btn-icon">
+                                        <svg fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M14 5l7 7m0 0l-7 7m7-7H3"></path>
+                                        </svg>
+                                    </span>
+                                    <span class="btn-text">MORE DETAILS</span>
+                                    <span style="width: 70px; flex-shrink: 0;"></span>
+                                </a>
+                            </div>
+                        </div>
+                    
+                        <div class="bg-white rounded-2xl shadow-[0_4px_20px_rgb(0,0,0,0.05)] hover:shadow-[0_8px_30px_rgb(0,0,0,0.08)] border border-gray-100 flex flex-col transition-all duration-300 overflow-hidden group">
+                            <div class="h-[250px] p-2 flex justify-center items-center bg-white border-b border-gray-50">
+                                <img src="assets/images/projects/cocoa_powder_processing_plant.jpg" alt="Cocoa Powder Processing Plant" class="w-[95%] h-full object-contain mx-auto" />
+                            </div>
+                            <div class="p-6 flex flex-col flex-grow bg-white">
+                                <h3 style="font-size: 20px; font-weight: 800; color: #0c2340; line-height: 1.3; margin-bottom: 12px;" class="line-clamp-2">
+                                    Cocoa Powder Processing Plant Consultancy
+                                </h3>
+                                <p style="font-size: 16px; line-height: 1.7;" class="text-gray-600 mb-6 flex-grow">
+                                    Complete consultancy for setting up a cocoa powder processing business.
+                                </p>
+                                <a href="cocoa-powder-processing-consultancy.html" class="more-details-btn mt-auto">
+                                    <span class="btn-icon">
+                                        <svg fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M14 5l7 7m0 0l-7 7m7-7H3"></path>
+                                        </svg>
+                                    </span>
+                                    <span class="btn-text">MORE DETAILS</span>
+                                    <span style="width: 70px; flex-shrink: 0;"></span>
+                                </a>
+                            </div>
+                        </div>
+                    
+                        <div class="bg-white rounded-2xl shadow-[0_4px_20px_rgb(0,0,0,0.05)] hover:shadow-[0_8px_30px_rgb(0,0,0,0.08)] border border-gray-100 flex flex-col transition-all duration-300 overflow-hidden group">
+                            <div class="h-[250px] p-2 flex justify-center items-center bg-white border-b border-gray-50">
+                                <img src="assets/images/projects/liquid_glucose_manufacturing_plant.jpg" alt="Liquid Glucose Manufacturing Plant" class="w-[95%] h-full object-contain mx-auto" />
+                            </div>
+                            <div class="p-6 flex flex-col flex-grow bg-white">
+                                <h3 style="font-size: 20px; font-weight: 800; color: #0c2340; line-height: 1.3; margin-bottom: 12px;" class="line-clamp-2">
+                                    Liquid Glucose Manufacturing Plant Consultancy
+                                </h3>
+                                <p style="font-size: 16px; line-height: 1.7;" class="text-gray-600 mb-6 flex-grow">
+                                    Complete consultancy for setting up a liquid glucose manufacturing business.
+                                </p>
+                                <a href="liquid-glucose-manufacturing-consultancy.html" class="more-details-btn mt-auto">
+                                    <span class="btn-icon">
+                                        <svg fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M14 5l7 7m0 0l-7 7m7-7H3"></path>
+                                        </svg>
+                                    </span>
+                                    <span class="btn-text">MORE DETAILS</span>
+                                    <span style="width: 70px; flex-shrink: 0;"></span>
+                                </a>
+                            </div>
+                        </div>
+                    
+                        <div class="bg-white rounded-2xl shadow-[0_4px_20px_rgb(0,0,0,0.05)] hover:shadow-[0_8px_30px_rgb(0,0,0,0.08)] border border-gray-100 flex flex-col transition-all duration-300 overflow-hidden group">
+                            <div class="h-[250px] p-2 flex justify-center items-center bg-white border-b border-gray-50">
+                                <img src="assets/images/projects/pizza_sauce_making_plant.jpg" alt="Pizza Sauce Making Plant" class="w-[95%] h-full object-contain mx-auto" />
+                            </div>
+                            <div class="p-6 flex flex-col flex-grow bg-white">
+                                <h3 style="font-size: 20px; font-weight: 800; color: #0c2340; line-height: 1.3; margin-bottom: 12px;" class="line-clamp-2">
+                                    Pizza Sauce Making Plant Consultancy
+                                </h3>
+                                <p style="font-size: 16px; line-height: 1.7;" class="text-gray-600 mb-6 flex-grow">
+                                    Complete consultancy for setting up a commercial pizza sauce manufacturing business.
+                                </p>
+                                <a href="pizza-sauce-making-consultancy.html" class="more-details-btn mt-auto">
+                                    <span class="btn-icon">
+                                        <svg fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M14 5l7 7m0 0l-7 7m7-7H3"></path>
+                                        </svg>
+                                    </span>
+                                    <span class="btn-text">MORE DETAILS</span>
+                                    <span style="width: 70px; flex-shrink: 0;"></span>
+                                </a>
+                            </div>
+                        </div>
+                    
+                        <div class="bg-white rounded-2xl shadow-[0_4px_20px_rgb(0,0,0,0.05)] hover:shadow-[0_8px_30px_rgb(0,0,0,0.08)] border border-gray-100 flex flex-col transition-all duration-300 overflow-hidden group">
+                            <div class="h-[250px] p-2 flex justify-center items-center bg-white border-b border-gray-50">
+                                <img src="assets/images/projects/tomato_ketchup_manufacturing_plant.jpg" alt="Tomato Ketchup Manufacturing Plant" class="w-[95%] h-full object-contain mx-auto" />
+                            </div>
+                            <div class="p-6 flex flex-col flex-grow bg-white">
+                                <h3 style="font-size: 20px; font-weight: 800; color: #0c2340; line-height: 1.3; margin-bottom: 12px;" class="line-clamp-2">
+                                    Tomato Ketchup Manufacturing Plant Consultancy
+                                </h3>
+                                <p style="font-size: 16px; line-height: 1.7;" class="text-gray-600 mb-6 flex-grow">
+                                    Complete consultancy for setting up a commercial tomato ketchup manufacturing business.
+                                </p>
+                                <a href="tomato-ketchup-manufacturing-consultancy.html" class="more-details-btn mt-auto">
+                                    <span class="btn-icon">
+                                        <svg fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M14 5l7 7m0 0l-7 7m7-7H3"></path>
+                                        </svg>
+                                    </span>
+                                    <span class="btn-text">MORE DETAILS</span>
+                                    <span style="width: 70px; flex-shrink: 0;"></span>
+                                </a>
+                            </div>
+                        </div>
+                    
+                        <div class="bg-white rounded-2xl shadow-[0_4px_20px_rgb(0,0,0,0.05)] hover:shadow-[0_8px_30px_rgb(0,0,0,0.08)] border border-gray-100 flex flex-col transition-all duration-300 overflow-hidden group">
+                            <div class="h-[250px] p-2 flex justify-center items-center bg-white border-b border-gray-50">
+                                <img src="assets/images/projects/coffee_processing_machine.jpg" alt="Coffee Processing Machine" class="w-[95%] h-full object-contain mx-auto" />
+                            </div>
+                            <div class="p-6 flex flex-col flex-grow bg-white">
+                                <h3 style="font-size: 20px; font-weight: 800; color: #0c2340; line-height: 1.3; margin-bottom: 12px;" class="line-clamp-2">
+                                    Coffee Processing Machine Consultancy
+                                </h3>
+                                <p style="font-size: 16px; line-height: 1.7;" class="text-gray-600 mb-6 flex-grow">
+                                    Complete consultancy for setting up a premium coffee processing business.
+                                </p>
+                                <a href="coffee-processing-consultancy.html" class="more-details-btn mt-auto">
+                                    <span class="btn-icon">
+                                        <svg fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M14 5l7 7m0 0l-7 7m7-7H3"></path>
+                                        </svg>
+                                    </span>
+                                    <span class="btn-text">MORE DETAILS</span>
+                                    <span style="width: 70px; flex-shrink: 0;"></span>
+                                </a>
+                            </div>
+                        </div>
+                    
+                        <div class="bg-white rounded-2xl shadow-[0_4px_20px_rgb(0,0,0,0.05)] hover:shadow-[0_8px_30px_rgb(0,0,0,0.08)] border border-gray-100 flex flex-col transition-all duration-300 overflow-hidden group">
+                            <div class="h-[250px] p-2 flex justify-center items-center bg-white border-b border-gray-50">
+                                <img src="assets/images/projects/green_tea_processing_plant.jpg" alt="Green Tea Processing Plant" class="w-[95%] h-full object-contain mx-auto" />
+                            </div>
+                            <div class="p-6 flex flex-col flex-grow bg-white">
+                                <h3 style="font-size: 20px; font-weight: 800; color: #0c2340; line-height: 1.3; margin-bottom: 12px;" class="line-clamp-2">
+                                    Green Tea Processing Plant Consultancy
+                                </h3>
+                                <p style="font-size: 16px; line-height: 1.7;" class="text-gray-600 mb-6 flex-grow">
+                                    Complete consultancy for establishing a modern green tea processing facility.
+                                </p>
+                                <a href="green-tea-processing-consultancy.html" class="more-details-btn mt-auto">
+                                    <span class="btn-icon">
+                                        <svg fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M14 5l7 7m0 0l-7 7m7-7H3"></path>
+                                        </svg>
+                                    </span>
+                                    <span class="btn-text">MORE DETAILS</span>
+                                    <span style="width: 70px; flex-shrink: 0;"></span>
+                                </a>
+                            </div>
+                        </div>
+                    
+                        <div class="bg-white rounded-2xl shadow-[0_4px_20px_rgb(0,0,0,0.05)] hover:shadow-[0_8px_30px_rgb(0,0,0,0.08)] border border-gray-100 flex flex-col transition-all duration-300 overflow-hidden group">
+                            <div class="h-[250px] p-2 flex justify-center items-center bg-white border-b border-gray-50">
+                                <img src="assets/images/projects/potato_powder_making_machine.jpg" alt="Potato Powder Making Machine" class="w-[95%] h-full object-contain mx-auto" />
+                            </div>
+                            <div class="p-6 flex flex-col flex-grow bg-white">
+                                <h3 style="font-size: 20px; font-weight: 800; color: #0c2340; line-height: 1.3; margin-bottom: 12px;" class="line-clamp-2">
+                                    Potato Powder Making Machine Consultancy
+                                </h3>
+                                <p style="font-size: 16px; line-height: 1.7;" class="text-gray-600 mb-6 flex-grow">
+                                    Complete consultancy for setting up a potato powder making business.
+                                </p>
+                                <a href="potato-powder-making-consultancy.html" class="more-details-btn mt-auto">
+                                    <span class="btn-icon">
+                                        <svg fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M14 5l7 7m0 0l-7 7m7-7H3"></path>
+                                        </svg>
+                                    </span>
+                                    <span class="btn-text">MORE DETAILS</span>
+                                    <span style="width: 70px; flex-shrink: 0;"></span>
+                                </a>
+                            </div>
+                        </div>
+                    
+                        <div class="bg-white rounded-2xl shadow-[0_4px_20px_rgb(0,0,0,0.05)] hover:shadow-[0_8px_30px_rgb(0,0,0,0.08)] border border-gray-100 flex flex-col transition-all duration-300 overflow-hidden group">
+                            <div class="h-[250px] p-2 flex justify-center items-center bg-white border-b border-gray-50">
+                                <img src="assets/images/projects/mill_plant.jpg" alt="Mill Plant" class="w-[95%] h-full object-contain mx-auto" />
+                            </div>
+                            <div class="p-6 flex flex-col flex-grow bg-white">
+                                <h3 style="font-size: 20px; font-weight: 800; color: #0c2340; line-height: 1.3; margin-bottom: 12px;" class="line-clamp-2">
+                                    Mill Plant Consultancy
+                                </h3>
+                                <p style="font-size: 16px; line-height: 1.7;" class="text-gray-600 mb-6 flex-grow">
+                                    Complete consultancy for setting up a mill plant.
+                                </p>
+                                <a href="mill-plant-consultancy.html" class="more-details-btn mt-auto">
+                                    <span class="btn-icon">
+                                        <svg fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M14 5l7 7m0 0l-7 7m7-7H3"></path>
+                                        </svg>
+                                    </span>
+                                    <span class="btn-text">MORE DETAILS</span>
+                                    <span style="width: 70px; flex-shrink: 0;"></span>
+                                </a>
+                            </div>
+                        </div>
+                    
+                        <div class="bg-white rounded-2xl shadow-[0_4px_20px_rgb(0,0,0,0.05)] hover:shadow-[0_8px_30px_rgb(0,0,0,0.08)] border border-gray-100 flex flex-col transition-all duration-300 overflow-hidden group">
+                            <div class="h-[250px] p-2 flex justify-center items-center bg-white border-b border-gray-50">
+                                <img src="assets/images/projects/peanut_oil_mill_plant.jpg" alt="Peanut Oil Mill Plant" class="w-[95%] h-full object-contain mx-auto" />
+                            </div>
+                            <div class="p-6 flex flex-col flex-grow bg-white">
+                                <h3 style="font-size: 20px; font-weight: 800; color: #0c2340; line-height: 1.3; margin-bottom: 12px;" class="line-clamp-2">
+                                    Peanut Oil Mill Plant Consultancy
+                                </h3>
+                                <p style="font-size: 16px; line-height: 1.7;" class="text-gray-600 mb-6 flex-grow">
+                                    Complete consultancy for setting up a peanut oil mill plant.
+                                </p>
+                                <a href="peanut-oil-mill-plant-consultancy.html" class="more-details-btn mt-auto">
+                                    <span class="btn-icon">
+                                        <svg fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M14 5l7 7m0 0l-7 7m7-7H3"></path>
+                                        </svg>
+                                    </span>
+                                    <span class="btn-text">MORE DETAILS</span>
+                                    <span style="width: 70px; flex-shrink: 0;"></span>
+                                </a>
+                            </div>
+                        </div>
+                    
+                        <div class="bg-white rounded-2xl shadow-[0_4px_20px_rgb(0,0,0,0.05)] hover:shadow-[0_8px_30px_rgb(0,0,0,0.08)] border border-gray-100 flex flex-col transition-all duration-300 overflow-hidden group">
+                            <div class="h-[250px] p-2 flex justify-center items-center bg-white border-b border-gray-50">
+                                <img src="assets/images/projects/edible_oil_production_line.jpg" alt="Edible Oil Production Line" class="w-[95%] h-full object-contain mx-auto" />
+                            </div>
+                            <div class="p-6 flex flex-col flex-grow bg-white">
+                                <h3 style="font-size: 20px; font-weight: 800; color: #0c2340; line-height: 1.3; margin-bottom: 12px;" class="line-clamp-2">
+                                    Edible Oil Production Line Consultancy
+                                </h3>
+                                <p style="font-size: 16px; line-height: 1.7;" class="text-gray-600 mb-6 flex-grow">
+                                    Complete consultancy for setting up an edible oil production line.
+                                </p>
+                                <a href="edible-oil-production-line-consultancy.html" class="more-details-btn mt-auto">
+                                    <span class="btn-icon">
+                                        <svg fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M14 5l7 7m0 0l-7 7m7-7H3"></path>
+                                        </svg>
+                                    </span>
+                                    <span class="btn-text">MORE DETAILS</span>
+                                    <span style="width: 70px; flex-shrink: 0;"></span>
+                                </a>
+                            </div>
+                        </div>
+                    
+                        <div class="bg-white rounded-2xl shadow-[0_4px_20px_rgb(0,0,0,0.05)] hover:shadow-[0_8px_30px_rgb(0,0,0,0.08)] border border-gray-100 flex flex-col transition-all duration-300 overflow-hidden group">
+                            <div class="h-[250px] p-2 flex justify-center items-center bg-white border-b border-gray-50">
+                                <img src="assets/images/projects/wheat_flour_production_plant.jpg" alt="Wheat Flour Production Plant" class="w-[95%] h-full object-contain mx-auto" />
+                            </div>
+                            <div class="p-6 flex flex-col flex-grow bg-white">
+                                <h3 style="font-size: 20px; font-weight: 800; color: #0c2340; line-height: 1.3; margin-bottom: 12px;" class="line-clamp-2">
+                                    Wheat Flour Production Plant Consultancy
+                                </h3>
+                                <p style="font-size: 16px; line-height: 1.7;" class="text-gray-600 mb-6 flex-grow">
+                                    Complete consultancy for setting up a wheat flour production plant.
+                                </p>
+                                <a href="wheat-flour-production-consultancy.html" class="more-details-btn mt-auto">
+                                    <span class="btn-icon">
+                                        <svg fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M14 5l7 7m0 0l-7 7m7-7H3"></path>
+                                        </svg>
+                                    </span>
+                                    <span class="btn-text">MORE DETAILS</span>
+                                    <span style="width: 70px; flex-shrink: 0;"></span>
+                                </a>
+                            </div>
+                        </div>
+                    
+                        <div class="bg-white rounded-2xl shadow-[0_4px_20px_rgb(0,0,0,0.05)] hover:shadow-[0_8px_30px_rgb(0,0,0,0.08)] border border-gray-100 flex flex-col transition-all duration-300 overflow-hidden group">
+                            <div class="h-[250px] p-2 flex justify-center items-center bg-white border-b border-gray-50">
+                                <img src="assets/images/projects/coriander_powder_making_plant.jpg" alt="Coriander Powder Making Plant" class="w-[95%] h-full object-contain mx-auto" />
+                            </div>
+                            <div class="p-6 flex flex-col flex-grow bg-white">
+                                <h3 style="font-size: 20px; font-weight: 800; color: #0c2340; line-height: 1.3; margin-bottom: 12px;" class="line-clamp-2">
+                                    Coriander Powder Making Plant Consultancy
+                                </h3>
+                                <p style="font-size: 16px; line-height: 1.7;" class="text-gray-600 mb-6 flex-grow">
+                                    Complete consultancy for setting up a coriander powder making plant.
+                                </p>
+                                <a href="coriander-powder-making-consultancy.html" class="more-details-btn mt-auto">
+                                    <span class="btn-icon">
+                                        <svg fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M14 5l7 7m0 0l-7 7m7-7H3"></path>
+                                        </svg>
+                                    </span>
+                                    <span class="btn-text">MORE DETAILS</span>
+                                    <span style="width: 70px; flex-shrink: 0;"></span>
+                                </a>
+                            </div>
+                        </div>
+                    
+                        <div class="bg-white rounded-2xl shadow-[0_4px_20px_rgb(0,0,0,0.05)] hover:shadow-[0_8px_30px_rgb(0,0,0,0.08)] border border-gray-100 flex flex-col transition-all duration-300 overflow-hidden group">
+                            <div class="h-[250px] p-2 flex justify-center items-center bg-white border-b border-gray-50">
+                                <img src="assets/images/projects/cashew_nut_processing_plant.jpg" alt="Cashew Nut Processing Plant" class="w-[95%] h-full object-contain mx-auto" />
+                            </div>
+                            <div class="p-6 flex flex-col flex-grow bg-white">
+                                <h3 style="font-size: 20px; font-weight: 800; color: #0c2340; line-height: 1.3; margin-bottom: 12px;" class="line-clamp-2">
+                                    Cashew Nut Processing Plant Consultancy
+                                </h3>
+                                <p style="font-size: 16px; line-height: 1.7;" class="text-gray-600 mb-6 flex-grow">
+                                    Complete consultancy for setting up a cashew nut processing plant.
+                                </p>
+                                <a href="cashew-nut-processing-consultancy.html" class="more-details-btn mt-auto">
+                                    <span class="btn-icon">
+                                        <svg fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M14 5l7 7m0 0l-7 7m7-7H3"></path>
+                                        </svg>
+                                    </span>
+                                    <span class="btn-text">MORE DETAILS</span>
+                                    <span style="width: 70px; flex-shrink: 0;"></span>
+                                </a>
+                            </div>
+                        </div>
+                    
+                        <div class="bg-white rounded-2xl shadow-[0_4px_20px_rgb(0,0,0,0.05)] hover:shadow-[0_8px_30px_rgb(0,0,0,0.08)] border border-gray-100 flex flex-col transition-all duration-300 overflow-hidden group">
+                            <div class="h-[250px] p-2 flex justify-center items-center bg-white border-b border-gray-50">
+                                <img src="assets/images/projects/industry_4_0_automation.jpg" alt="Industry 4.0 Automation" class="w-[95%] h-full object-contain mx-auto" />
+                            </div>
+                            <div class="p-6 flex flex-col flex-grow bg-white">
+                                <h3 style="font-size: 20px; font-weight: 800; color: #0c2340; line-height: 1.3; margin-bottom: 12px;" class="line-clamp-2">
+                                    Industry 4.0 Automation for Food Plant Consultancy
+                                </h3>
+                                <p style="font-size: 16px; line-height: 1.7;" class="text-gray-600 mb-6 flex-grow">
+                                    Complete consultancy for implementing Industry 4.0 automation in food plants.
+                                </p>
+                                <a href="industry-4-0-automation-consultancy.html" class="more-details-btn mt-auto">
+                                    <span class="btn-icon">
+                                        <svg fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M14 5l7 7m0 0l-7 7m7-7H3"></path>
+                                        </svg>
+                                    </span>
+                                    <span class="btn-text">MORE DETAILS</span>
+                                    <span style="width: 70px; flex-shrink: 0;"></span>
+                                </a>
+                            </div>
+                        </div>
+                    
+                                                <div class="bg-white rounded-2xl shadow-[0_4px_20px_rgb(0,0,0,0.05)] hover:shadow-[0_8px_30px_rgb(0,0,0,0.08)] border border-gray-100 flex flex-col transition-all duration-300 overflow-hidden group">
+                            <div class="h-[250px] p-2 flex justify-center items-center bg-white border-b border-gray-50">
+                                <img src="assets/images/projects/roasted_nuts_snacks_making_machine.jpg" alt="Roasted Nuts Snacks Making Machine" class="w-[95%] h-full object-contain mx-auto" />
+                            </div>
+                            <div class="p-6 flex flex-col flex-grow bg-white">
+                                <h3 style="font-size: 20px; font-weight: 800; color: #0c2340; line-height: 1.3; margin-bottom: 12px;" class="line-clamp-2">
+                                    Roasted Nuts Snacks Making Machine
+                                </h3>
+                                <p style="font-size: 16px; line-height: 1.7;" class="text-gray-600 mb-6 flex-grow">
+                                    Complete consultancy for setting up a roasted nuts snacks making machine.
+                                </p>
+                                <a href="roasted-nuts-snacks-making-machine-consultancy.html" class="more-details-btn mt-auto">
+                                    <span class="btn-icon">
+                                        <svg fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M14 5l7 7m0 0l-7 7m7-7H3"></path>
+                                        </svg>
+                                    </span>
+                                    <span class="btn-text">MORE DETAILS</span>
+                                    <span style="width: 70px; flex-shrink: 0;"></span>
+                                </a>
+                            </div>
+                        </div>
+                    
+                                                <div class="bg-white rounded-2xl shadow-[0_4px_20px_rgb(0,0,0,0.05)] hover:shadow-[0_8px_30px_rgb(0,0,0,0.08)] border border-gray-100 flex flex-col transition-all duration-300 overflow-hidden group">
+                            <div class="h-[250px] p-2 flex justify-center items-center bg-white border-b border-gray-50">
+                                <img src="assets/images/projects/groundnut_chikki_processing_plant.jpg" alt="Groundnut Chikki Processing Plant" class="w-[95%] h-full object-contain mx-auto" />
+                            </div>
+                            <div class="p-6 flex flex-col flex-grow bg-white">
+                                <h3 style="font-size: 20px; font-weight: 800; color: #0c2340; line-height: 1.3; margin-bottom: 12px;" class="line-clamp-2">
+                                    Groundnut Chikki Processing Plant Consultancy
+                                </h3>
+                                <p style="font-size: 16px; line-height: 1.7;" class="text-gray-600 mb-6 flex-grow">
+                                    Complete consultancy for setting up a groundnut chikki processing plant.
+                                </p>
+                                <a href="groundnut-chikki-processing-plant-consultancy.html" class="more-details-btn mt-auto">
+                                    <span class="btn-icon">
+                                        <svg fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M14 5l7 7m0 0l-7 7m7-7H3"></path>
+                                        </svg>
+                                    </span>
+                                    <span class="btn-text">MORE DETAILS</span>
+                                    <span style="width: 70px; flex-shrink: 0;"></span>
+                                </a>
+                            </div>
+                        </div>
+                    
+                                                <div class="bg-white rounded-2xl shadow-[0_4px_20px_rgb(0,0,0,0.05)] hover:shadow-[0_8px_30px_rgb(0,0,0,0.08)] border border-gray-100 flex flex-col transition-all duration-300 overflow-hidden group">
+                            <div class="h-[250px] p-2 flex justify-center items-center bg-white border-b border-gray-50">
+                                <img src="assets/images/projects/fruit-powder-processing-plant.jpg" alt="Fruit Powder Processing Plant" class="w-[95%] h-full object-contain mx-auto" />
+                            </div>
+                            <div class="p-6 flex flex-col flex-grow bg-white">
+                                <h3 style="font-size: 20px; font-weight: 800; color: #0c2340; line-height: 1.3; margin-bottom: 12px;" class="line-clamp-2">
+                                    Fruit Powder Processing Plant Consultancy
+                                </h3>
+                                <p style="font-size: 16px; line-height: 1.7;" class="text-gray-600 mb-6 flex-grow">
+                                    Complete consultancy for setting up a fruit powder processing plant.
+                                </p>
+                                <a href="fruit-powder-processing-plant-consultancy.html" class="more-details-btn mt-auto">
+                                    <span class="btn-icon">
+                                        <svg fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M14 5l7 7m0 0l-7 7m7-7H3"></path>
+                                        </svg>
+                                    </span>
+                                    <span class="btn-text">MORE DETAILS</span>
+                                    <span style="width: 70px; flex-shrink: 0;"></span>
+                                </a>
+                            </div>
+                        </div>
+                    
+                                                <div class="bg-white rounded-2xl shadow-[0_4px_20px_rgb(0,0,0,0.05)] hover:shadow-[0_8px_30px_rgb(0,0,0,0.08)] border border-gray-100 flex flex-col transition-all duration-300 overflow-hidden group">
+                            <div class="h-[250px] p-2 flex justify-center items-center bg-white border-b border-gray-50">
+                                <img src="assets/images/projects/turnkey-project-for-biscuit-and-bakery.jpg" alt="Turnkey Project for Biscuit and Bakery" class="w-[95%] h-full object-contain mx-auto" />
+                            </div>
+                            <div class="p-6 flex flex-col flex-grow bg-white">
+                                <h3 style="font-size: 20px; font-weight: 800; color: #0c2340; line-height: 1.3; margin-bottom: 12px;" class="line-clamp-2">
+                                    Turnkey Project for Biscuit and Bakery
+                                </h3>
+                                <p style="font-size: 16px; line-height: 1.7;" class="text-gray-600 mb-6 flex-grow">
+                                    Complete consultancy for setting up a turnkey project for biscuit and bakery.
+                                </p>
+                                <a href="biscuit-and-bakery-consultancy.html" class="more-details-btn mt-auto">
+                                    <span class="btn-icon">
+                                        <svg fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M14 5l7 7m0 0l-7 7m7-7H3"></path>
+                                        </svg>
+                                    </span>
+                                    <span class="btn-text">MORE DETAILS</span>
+                                    <span style="width: 70px; flex-shrink: 0;"></span>
+                                </a>
+                            </div>
+                        </div>
+                    
+                                                <div class="bg-white rounded-2xl shadow-[0_4px_20px_rgb(0,0,0,0.05)] hover:shadow-[0_8px_30px_rgb(0,0,0,0.08)] border border-gray-100 flex flex-col transition-all duration-300 overflow-hidden group">
+                            <div class="h-[250px] p-2 flex justify-center items-center bg-white border-b border-gray-50">
+                                <img src="assets/images/projects/banana-and-potato-chips-processing-plant.jpg" alt="Banana and Potato Chips Processing Plant" class="w-[95%] h-full object-contain mx-auto" />
+                            </div>
+                            <div class="p-6 flex flex-col flex-grow bg-white">
+                                <h3 style="font-size: 20px; font-weight: 800; color: #0c2340; line-height: 1.3; margin-bottom: 12px;" class="line-clamp-2">
+                                    Banana and Potato Chips Processing Plant Consultancy
+                                </h3>
+                                <p style="font-size: 16px; line-height: 1.7;" class="text-gray-600 mb-6 flex-grow">
+                                    Complete consultancy for setting up a banana and potato chips processing plant.
+                                </p>
+                                <a href="banana-and-potato-chips-processing-plant-consultancy.html" class="more-details-btn mt-auto">
+                                    <span class="btn-icon">
+                                        <svg fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M14 5l7 7m0 0l-7 7m7-7H3"></path>
+                                        </svg>
+                                    </span>
+                                    <span class="btn-text">MORE DETAILS</span>
+                                    <span style="width: 70px; flex-shrink: 0;"></span>
+                                </a>
+                            </div>
+                        </div>
+                    
+                                                <div class="bg-white rounded-2xl shadow-[0_4px_20px_rgb(0,0,0,0.05)] hover:shadow-[0_8px_30px_rgb(0,0,0,0.08)] border border-gray-100 flex flex-col transition-all duration-300 overflow-hidden group">
+                            <div class="h-[250px] p-2 flex justify-center items-center bg-white border-b border-gray-50">
+                                <img src="assets/images/projects/fully-automated-protein-bar-production-plant.jpg" alt="Fully Automated Protein Bar Production Plant" class="w-[95%] h-full object-contain mx-auto" />
+                            </div>
+                            <div class="p-6 flex flex-col flex-grow bg-white">
+                                <h3 style="font-size: 20px; font-weight: 800; color: #0c2340; line-height: 1.3; margin-bottom: 12px;" class="line-clamp-2">
+                                    Fully Automated Protein Bar Production Plant Consultancy
+                                </h3>
+                                <p style="font-size: 16px; line-height: 1.7;" class="text-gray-600 mb-6 flex-grow">
+                                    Complete consultancy for setting up a fully automated protein bar production plant.
+                                </p>
+                                <a href="protein-bar-production-plant-consultancy.html" class="more-details-btn mt-auto">
+                                    <span class="btn-icon">
+                                        <svg fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M14 5l7 7m0 0l-7 7m7-7H3"></path>
+                                        </svg>
+                                    </span>
+                                    <span class="btn-text">MORE DETAILS</span>
+                                    <span style="width: 70px; flex-shrink: 0;"></span>
+                                </a>
+                            </div>
+                        </div>
+                    
+                                                <div class="bg-white rounded-2xl shadow-[0_4px_20px_rgb(0,0,0,0.05)] hover:shadow-[0_8px_30px_rgb(0,0,0,0.08)] border border-gray-100 flex flex-col transition-all duration-300 overflow-hidden group">
+                            <div class="h-[250px] p-2 flex justify-center items-center bg-white border-b border-gray-50">
+                                <img src="assets/images/projects/fully-automated-instant-mix-and-frozen-food-plant.jpg" alt="Fully Automated Instant Mix & Frozen Food Plant" class="w-[95%] h-full object-contain mx-auto" />
+                            </div>
+                            <div class="p-6 flex flex-col flex-grow bg-white">
+                                <h3 style="font-size: 20px; font-weight: 800; color: #0c2340; line-height: 1.3; margin-bottom: 12px;" class="line-clamp-2">
+                                    Fully Automated Instant Mix & Frozen Food Plant Consultancy
+                                </h3>
+                                <p style="font-size: 16px; line-height: 1.7;" class="text-gray-600 mb-6 flex-grow">
+                                    Complete consultancy for setting up a fully automated instant mix & frozen food plant.
+                                </p>
+                                <a href="instant-mix-frozen-food-plant-consultancy.html" class="more-details-btn mt-auto">
+                                    <span class="btn-icon">
+                                        <svg fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M14 5l7 7m0 0l-7 7m7-7H3"></path>
+                                        </svg>
+                                    </span>
+                                    <span class="btn-text">MORE DETAILS</span>
+                                    <span style="width: 70px; flex-shrink: 0;"></span>
+                                </a>
+                            </div>
+                        </div>
+                    
+                                                <div class="bg-white rounded-2xl shadow-[0_4px_20px_rgb(0,0,0,0.05)] hover:shadow-[0_8px_30px_rgb(0,0,0,0.08)] border border-gray-100 flex flex-col transition-all duration-300 overflow-hidden group">
+                            <div class="h-[250px] p-2 flex justify-center items-center bg-white border-b border-gray-50">
+                                <img src="assets/images/projects/fully-automated-mayonnaise-processing-plant.jpg" alt="Fully Automated Mayonnaise Processing Plant" class="w-[95%] h-full object-contain mx-auto" />
+                            </div>
+                            <div class="p-6 flex flex-col flex-grow bg-white">
+                                <h3 style="font-size: 20px; font-weight: 800; color: #0c2340; line-height: 1.3; margin-bottom: 12px;" class="line-clamp-2">
+                                    Fully Automated Mayonnaise Processing Plant Consultancy
+                                </h3>
+                                <p style="font-size: 16px; line-height: 1.7;" class="text-gray-600 mb-6 flex-grow">
+                                    Complete consultancy for setting up a fully automated mayonnaise processing plant.
+                                </p>
+                                <a href="mayonnaise-processing-plant-consultancy.html" class="more-details-btn mt-auto">
+                                    <span class="btn-icon">
+                                        <svg fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M14 5l7 7m0 0l-7 7m7-7H3"></path>
+                                        </svg>
+                                    </span>
+                                    <span class="btn-text">MORE DETAILS</span>
+                                    <span style="width: 70px; flex-shrink: 0;"></span>
+                                </a>
+                            </div>
+                        </div>
+                    
+                                                <div class="bg-white rounded-2xl shadow-[0_4px_20px_rgb(0,0,0,0.05)] hover:shadow-[0_8px_30px_rgb(0,0,0,0.08)] border border-gray-100 flex flex-col transition-all duration-300 overflow-hidden group">
+                            <div class="h-[250px] p-2 flex justify-center items-center bg-white border-b border-gray-50">
+                                <img src="assets/images/projects/instant-noodles-making-mastira-production-plant.jpg" alt="Instant Noodles Making Mastira Production Plant" class="w-[95%] h-full object-contain mx-auto" />
+                            </div>
+                            <div class="p-6 flex flex-col flex-grow bg-white">
+                                <h3 style="font-size: 20px; font-weight: 800; color: #0c2340; line-height: 1.3; margin-bottom: 12px;" class="line-clamp-2">
+                                    Instant Noodles Making Mastira Production Plant Consultancy
+                                </h3>
+                                <p style="font-size: 16px; line-height: 1.7;" class="text-gray-600 mb-6 flex-grow">
+                                    Complete consultancy for setting up a instant noodles making mastira production plant.
+                                </p>
+                                <a href="instant-noodles-making-mastira-production-plant-consultancy.html" class="more-details-btn mt-auto">
+                                    <span class="btn-icon">
+                                        <svg fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M14 5l7 7m0 0l-7 7m7-7H3"></path>
+                                        </svg>
+                                    </span>
+                                    <span class="btn-text">MORE DETAILS</span>
+                                    <span style="width: 70px; flex-shrink: 0;"></span>
+                                </a>
+                            </div>
+                        </div>
+                    
+                                                <div class="bg-white rounded-2xl shadow-[0_4px_20px_rgb(0,0,0,0.05)] hover:shadow-[0_8px_30px_rgb(0,0,0,0.08)] border border-gray-100 flex flex-col transition-all duration-300 overflow-hidden group">
+                            <div class="h-[250px] p-2 flex justify-center items-center bg-white border-b border-gray-50">
+                                <img src="assets/images/projects/red-chilli-processing-and-packing-plant.jpg" alt="Red Chilli Processing and Packing Plant" class="w-[95%] h-full object-contain mx-auto" />
+                            </div>
+                            <div class="p-6 flex flex-col flex-grow bg-white">
+                                <h3 style="font-size: 20px; font-weight: 800; color: #0c2340; line-height: 1.3; margin-bottom: 12px;" class="line-clamp-2">
+                                    Red Chilli Processing and Packing Plant Consultancy
+                                </h3>
+                                <p style="font-size: 16px; line-height: 1.7;" class="text-gray-600 mb-6 flex-grow">
+                                    Complete consultancy for setting up a red chilli processing and packing plant.
+                                </p>
+                                <a href="red-chilli-processing-and-packing-plant-consultancy.html" class="more-details-btn mt-auto">
+                                    <span class="btn-icon">
+                                        <svg fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M14 5l7 7m0 0l-7 7m7-7H3"></path>
+                                        </svg>
+                                    </span>
+                                    <span class="btn-text">MORE DETAILS</span>
+                                    <span style="width: 70px; flex-shrink: 0;"></span>
+                                </a>
+                            </div>
+                        </div>
+                    
+                                                <div class="bg-white rounded-2xl shadow-[0_4px_20px_rgb(0,0,0,0.05)] hover:shadow-[0_8px_30px_rgb(0,0,0,0.08)] border border-gray-100 flex flex-col transition-all duration-300 overflow-hidden group">
+                            <div class="h-[250px] p-2 flex justify-center items-center bg-white border-b border-gray-50">
+                                <img src="assets/images/projects/fully-automated-ors-oral-rehydration-salts-plant.jpg" alt="Fully Automated ORS (Oral Rehydration Salts) Plant" class="w-[95%] h-full object-contain mx-auto" />
+                            </div>
+                            <div class="p-6 flex flex-col flex-grow bg-white">
+                                <h3 style="font-size: 20px; font-weight: 800; color: #0c2340; line-height: 1.3; margin-bottom: 12px;" class="line-clamp-2">
+                                    Fully Automated ORS (Oral Rehydration Salts) Plant Consultancy
+                                </h3>
+                                <p style="font-size: 16px; line-height: 1.7;" class="text-gray-600 mb-6 flex-grow">
+                                    Complete consultancy for setting up a fully automated ors (oral rehydration salts) plant.
+                                </p>
+                                <a href="ors-oral-rehydration-salts-plant-consultancy.html" class="more-details-btn mt-auto">
+                                    <span class="btn-icon">
+                                        <svg fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M14 5l7 7m0 0l-7 7m7-7H3"></path>
+                                        </svg>
+                                    </span>
+                                    <span class="btn-text">MORE DETAILS</span>
+                                    <span style="width: 70px; flex-shrink: 0;"></span>
+                                </a>
+                            </div>
+                        </div>
+                    
+                                                <div class="bg-white rounded-2xl shadow-[0_4px_20px_rgb(0,0,0,0.05)] hover:shadow-[0_8px_30px_rgb(0,0,0,0.08)] border border-gray-100 flex flex-col transition-all duration-300 overflow-hidden group">
+                            <div class="h-[250px] p-2 flex justify-center items-center bg-white border-b border-gray-50">
+                                <img src="assets/images/projects/fully-automated-pickle-processing-plant.jpg" alt="Fully Automated Pickle Processing Plant" class="w-[95%] h-full object-contain mx-auto" />
+                            </div>
+                            <div class="p-6 flex flex-col flex-grow bg-white">
+                                <h3 style="font-size: 20px; font-weight: 800; color: #0c2340; line-height: 1.3; margin-bottom: 12px;" class="line-clamp-2">
+                                    Fully Automated Pickle Processing Plant Consultancy
+                                </h3>
+                                <p style="font-size: 16px; line-height: 1.7;" class="text-gray-600 mb-6 flex-grow">
+                                    Complete consultancy for setting up a fully automated pickle processing plant.
+                                </p>
+                                <a href="pickle-processing-plant-consultancy.html" class="more-details-btn mt-auto">
+                                    <span class="btn-icon">
+                                        <svg fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M14 5l7 7m0 0l-7 7m7-7H3"></path>
+                                        </svg>
+                                    </span>
+                                    <span class="btn-text">MORE DETAILS</span>
+                                    <span style="width: 70px; flex-shrink: 0;"></span>
+                                </a>
+                            </div>
+                        </div>
+                    
+                                                <div class="bg-white rounded-2xl shadow-[0_4px_20px_rgb(0,0,0,0.05)] hover:shadow-[0_8px_30px_rgb(0,0,0,0.08)] border border-gray-100 flex flex-col transition-all duration-300 overflow-hidden group">
+                            <div class="h-[250px] p-2 flex justify-center items-center bg-white border-b border-gray-50">
+                                <img src="assets/images/projects/fully-automated-milk-powder-processing-plant.jpg" alt="Fully Automated Milk Powder Processing Plant" class="w-[95%] h-full object-contain mx-auto" />
+                            </div>
+                            <div class="p-6 flex flex-col flex-grow bg-white">
+                                <h3 style="font-size: 20px; font-weight: 800; color: #0c2340; line-height: 1.3; margin-bottom: 12px;" class="line-clamp-2">
+                                    Fully Automated Milk Powder Processing Plant Consultancy
+                                </h3>
+                                <p style="font-size: 16px; line-height: 1.7;" class="text-gray-600 mb-6 flex-grow">
+                                    Complete consultancy for setting up a fully automated milk powder processing plant.
+                                </p>
+                                <a href="milk-powder-processing-plant-consultancy.html" class="more-details-btn mt-auto">
+                                    <span class="btn-icon">
+                                        <svg fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M14 5l7 7m0 0l-7 7m7-7H3"></path>
+                                        </svg>
+                                    </span>
+                                    <span class="btn-text">MORE DETAILS</span>
+                                    <span style="width: 70px; flex-shrink: 0;"></span>
+                                </a>
+                            </div>
+                        </div>
+                    
+                                                <div class="bg-white rounded-2xl shadow-[0_4px_20px_rgb(0,0,0,0.05)] hover:shadow-[0_8px_30px_rgb(0,0,0,0.08)] border border-gray-100 flex flex-col transition-all duration-300 overflow-hidden group">
+                            <div class="h-[250px] p-2 flex justify-center items-center bg-white border-b border-gray-50">
+                                <img src="assets/images/projects/fully-automated-ctc-tea-processing-plant.jpg" alt="Fully Automated CTC Tea Processing Plant" class="w-[95%] h-full object-contain mx-auto" />
+                            </div>
+                            <div class="p-6 flex flex-col flex-grow bg-white">
+                                <h3 style="font-size: 20px; font-weight: 800; color: #0c2340; line-height: 1.3; margin-bottom: 12px;" class="line-clamp-2">
+                                    Fully Automated CTC Tea Processing Plant Consultancy
+                                </h3>
+                                <p style="font-size: 16px; line-height: 1.7;" class="text-gray-600 mb-6 flex-grow">
+                                    Complete consultancy for setting up a fully automated ctc tea processing plant.
+                                </p>
+                                <a href="ctc-tea-processing-plant-consultancy.html" class="more-details-btn mt-auto">
+                                    <span class="btn-icon">
+                                        <svg fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M14 5l7 7m0 0l-7 7m7-7H3"></path>
+                                        </svg>
+                                    </span>
+                                    <span class="btn-text">MORE DETAILS</span>
+                                    <span style="width: 70px; flex-shrink: 0;"></span>
+                                </a>
+                            </div>
+                        </div>
+                    
+                                                <div class="bg-white rounded-2xl shadow-[0_4px_20px_rgb(0,0,0,0.05)] hover:shadow-[0_8px_30px_rgb(0,0,0,0.08)] border border-gray-100 flex flex-col transition-all duration-300 overflow-hidden group">
+                            <div class="h-[250px] p-2 flex justify-center items-center bg-white border-b border-gray-50">
+                                <img src="assets/images/projects/fully-automated-protein-powder-production-plant.jpg" alt="Fully Automated Protein Powder Production Plant" class="w-[95%] h-full object-contain mx-auto" />
+                            </div>
+                            <div class="p-6 flex flex-col flex-grow bg-white">
+                                <h3 style="font-size: 20px; font-weight: 800; color: #0c2340; line-height: 1.3; margin-bottom: 12px;" class="line-clamp-2">
+                                    Fully Automated Protein Powder Production Plant Consultancy
+                                </h3>
+                                <p style="font-size: 16px; line-height: 1.7;" class="text-gray-600 mb-6 flex-grow">
+                                    Complete consultancy for setting up a fully automated protein powder production plant.
+                                </p>
+                                <a href="protein-powder-production-plant-consultancy.html" class="more-details-btn mt-auto">
+                                    <span class="btn-icon">
+                                        <svg fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M14 5l7 7m0 0l-7 7m7-7H3"></path>
+                                        </svg>
+                                    </span>
+                                    <span class="btn-text">MORE DETAILS</span>
+                                    <span style="width: 70px; flex-shrink: 0;"></span>
+                                </a>
+                            </div>
+                        </div>
+                    
+                                                <div class="bg-white rounded-2xl shadow-[0_4px_20px_rgb(0,0,0,0.05)] hover:shadow-[0_8px_30px_rgb(0,0,0,0.08)] border border-gray-100 flex flex-col transition-all duration-300 overflow-hidden group">
+                            <div class="h-[250px] p-2 flex justify-center items-center bg-white border-b border-gray-50">
+                                <img src="assets/images/projects/fry-onions-processing-and-packaging-plant.jpg" alt="Fry Onions Processing & Packaging Plant" class="w-[95%] h-full object-contain mx-auto" />
+                            </div>
+                            <div class="p-6 flex flex-col flex-grow bg-white">
+                                <h3 style="font-size: 20px; font-weight: 800; color: #0c2340; line-height: 1.3; margin-bottom: 12px;" class="line-clamp-2">
+                                    Fry Onions Processing & Packaging Plant Consultancy
+                                </h3>
+                                <p style="font-size: 16px; line-height: 1.7;" class="text-gray-600 mb-6 flex-grow">
+                                    Complete consultancy for setting up a fry onions processing & packaging plant.
+                                </p>
+                                <a href="fry-onions-processing-packaging-plant-consultancy.html" class="more-details-btn mt-auto">
+                                    <span class="btn-icon">
+                                        <svg fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M14 5l7 7m0 0l-7 7m7-7H3"></path>
+                                        </svg>
+                                    </span>
+                                    <span class="btn-text">MORE DETAILS</span>
+                                    <span style="width: 70px; flex-shrink: 0;"></span>
+                                </a>
+                            </div>
+                        </div>
+                    
+                                                <div class="bg-white rounded-2xl shadow-[0_4px_20px_rgb(0,0,0,0.05)] hover:shadow-[0_8px_30px_rgb(0,0,0,0.08)] border border-gray-100 flex flex-col transition-all duration-300 overflow-hidden group">
+                            <div class="h-[250px] p-2 flex justify-center items-center bg-white border-b border-gray-50">
+                                <img src="assets/images/projects/nutrition-powder-making-production-plant.jpg" alt="Nutrition Powder Making Production Plant" class="w-[95%] h-full object-contain mx-auto" />
+                            </div>
+                            <div class="p-6 flex flex-col flex-grow bg-white">
+                                <h3 style="font-size: 20px; font-weight: 800; color: #0c2340; line-height: 1.3; margin-bottom: 12px;" class="line-clamp-2">
+                                    Nutrition Powder Making Production Plant Consultancy
+                                </h3>
+                                <p style="font-size: 16px; line-height: 1.7;" class="text-gray-600 mb-6 flex-grow">
+                                    Complete consultancy for setting up a nutrition powder making production plant.
+                                </p>
+                                <a href="nutrition-powder-making-production-plant-consultancy.html" class="more-details-btn mt-auto">
+                                    <span class="btn-icon">
+                                        <svg fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M14 5l7 7m0 0l-7 7m7-7H3"></path>
+                                        </svg>
+                                    </span>
+                                    <span class="btn-text">MORE DETAILS</span>
+                                    <span style="width: 70px; flex-shrink: 0;"></span>
+                                </a>
+                            </div>
+                        </div>
+                    
+                                                <div class="bg-white rounded-2xl shadow-[0_4px_20px_rgb(0,0,0,0.05)] hover:shadow-[0_8px_30px_rgb(0,0,0,0.08)] border border-gray-100 flex flex-col transition-all duration-300 overflow-hidden group">
+                            <div class="h-[250px] p-2 flex justify-center items-center bg-white border-b border-gray-50">
+                                <img src="assets/images/projects/economical-kurkure-making-plant.jpg" alt="Economical Kurkure Making Plant" class="w-[95%] h-full object-contain mx-auto" />
+                            </div>
+                            <div class="p-6 flex flex-col flex-grow bg-white">
+                                <h3 style="font-size: 20px; font-weight: 800; color: #0c2340; line-height: 1.3; margin-bottom: 12px;" class="line-clamp-2">
+                                    Economical Kurkure Making Plant Consultancy
+                                </h3>
+                                <p style="font-size: 16px; line-height: 1.7;" class="text-gray-600 mb-6 flex-grow">
+                                    Complete consultancy for setting up a economical kurkure making plant.
+                                </p>
+                                <a href="economical-kurkure-making-plant-consultancy.html" class="more-details-btn mt-auto">
+                                    <span class="btn-icon">
+                                        <svg fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M14 5l7 7m0 0l-7 7m7-7H3"></path>
+                                        </svg>
+                                    </span>
+                                    <span class="btn-text">MORE DETAILS</span>
+                                    <span style="width: 70px; flex-shrink: 0;"></span>
+                                </a>
+                            </div>
+                        </div>
+                    
+                </div>
+            </div>
+        </section>
+
+    </div>
+
+    </main>
+
+    <!-- Footer Section -->
+    <footer class="main-footer">
+        <div class="container footer-container">
+            <!-- Footer Column 1: Brand Info -->
+            <div class="footer-col brand-col">
+                <a href="#" class="footer-logo">
+                    <img src="assets/logo.png" alt="Hike Logo" class="footer-logo-img">
+                </a>
+                <p class="footer-brand-desc">
+                    Hike is your trusted partner for end-to-end food & beverage business consulting, guiding brands from
+                    product concept to commercial scaling and market launch.
+                </p>
+                <div class="social-links">
+                    <a href="#" aria-label="LinkedIn" class="social-icon-link">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                            stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z">
+                            </path>
+                            <rect x="2" y="9" width="4" height="12"></rect>
+                            <circle cx="4" cy="4" r="2"></circle>
+                        </svg>
+                    </a>
+                    <a href="#" aria-label="Instagram" class="social-icon-link">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                            stroke-linecap="round" stroke-linejoin="round">
+                            <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+                            <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+                            <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+                        </svg>
+                    </a>
+                    <a href="#" aria-label="Twitter" class="social-icon-link">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                            stroke-linecap="round" stroke-linejoin="round">
+                            <path
+                                d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z">
+                            </path>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Footer Column 2: Navigation Links -->
+            <div class="footer-col links-col">
+                <h4 class="footer-col-title">Navigation</h4>
+                <ul class="footer-link-list">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="projects.html">Projects</a></li>
+                    <li><a href="index.html#core-services">Services</a></li>
+                    <li><a href="index.html#industries">Industries</a></li>
+                    <li><a href="case-studies.html">Case Studies</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                </ul>
+            </div>
+
+            <!-- Footer Column 3: Services -->
+            <div class="footer-col links-col">
+                <h4 class="footer-col-title">Our Services</h4>
+                <ul class="footer-link-list">
+                    <li><a href="product-development.html">Product Development</a></li>
+                    <li><a href="manufacturing-setup.html">Manufacturing Setup</a></li>
+                    <li><a href="regulatory-compliance.html">Regulatory Compliance</a></li>
+                    <li><a href="contract-manufacturing.html">Contract Manufacturing</a></li>
+                    <li><a href="market-expansion.html">Market Expansion</a></li>
+                </ul>
+            </div>
+
+            <!-- Footer Column 4: Contact details -->
+            <div class="footer-col contact-col">
+                <h4 class="footer-col-title">Contact Us</h4>
+                <ul class="footer-contact-list">
+                    <li class="contact-item">
+                        <svg class="contact-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                            stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                            <circle cx="12" cy="10" r="3"></circle>
+                        </svg>
+                        <span>210, Arved Transcube Mall, Bandhu Nagar, Vijay Nagar, Ranip, Ahmedabad, Gujarat
+                            382480</span>
+                    </li>
+                    <li class="contact-item">
+                        <svg class="contact-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                            stroke-linecap="round" stroke-linejoin="round">
+                            <path
+                                d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z">
+                            </path>
+                        </svg>
+                        <span>+91 98987 27796</span>
+                    </li>
+                    <li class="contact-item">
+                        <svg class="contact-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                            stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z">
+                            </path>
+                            <polyline points="22,6 12,13 2,6"></polyline>
+                        </svg>
+                        <span>info.hikefnb@gmail.com</span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Footer Bottom Section -->
+        <div class="footer-bottom">
+            <div class="container footer-bottom-inner">
+                <p class="copyright-text">&copy; 2026 Hike Food & Beverage Consultants. All Rights Reserved.</p>
+                <div class="footer-policy-links">
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms of Service</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Mobile Nav Overlay -->
+    <div class="mobile-menu-overlay" id="mobileOverlay"></div>
+
+    <!-- JS Script -->
+    <script src="script.js"></script>
+
+    </body>
+
+</html>
+
+
+
+
+
+

@@ -263,4 +263,35 @@ document.addEventListener('DOMContentLoaded', () => {
         // Start slide show
         startAutoSlide();
     }
+
+    // 7. Animated Counters for Metrics Section
+    const counters = document.querySelectorAll('.metric-number[data-target]');
+    if (counters.length > 0) {
+        const observer = new IntersectionObserver((entries, obs) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    const counter = entry.target;
+                    const target = parseInt(counter.getAttribute('data-target'));
+                    const suffix = counter.getAttribute('data-suffix') || '';
+                    const duration = 2000;
+                    let startTimestamp = null;
+
+                    const step = (timestamp) => {
+                        if (!startTimestamp) startTimestamp = timestamp;
+                        const progress = Math.min((timestamp - startTimestamp) / duration, 1);
+                        counter.innerText = Math.floor(progress * target) + suffix;
+                        if (progress < 1) {
+                            window.requestAnimationFrame(step);
+                        } else {
+                            counter.innerText = target + suffix;
+                        }
+                    };
+                    window.requestAnimationFrame(step);
+                    obs.unobserve(counter);
+                }
+            });
+        }, { threshold: 0.1 });
+
+        counters.forEach(counter => observer.observe(counter));
+    }
 });
