@@ -150,7 +150,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
             // Encode text block
             const encodedText = encodeURIComponent(msg);
-            const targetPhone = '919898727796'; // Indian country code + number
+            const targetPhone = '919023979663'; // Indian country code + number
 
             // Open WhatsApp direct link in new window
             window.open(`https://wa.me/${targetPhone}?text=${encodedText}`, '_blank');
@@ -158,7 +158,7 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 
     // 5. Global CTA WhatsApp Redirect
-    const targetPhoneNum = '919898727796'; // Indian country code + number
+    const targetPhoneNum = '919023979663'; // Indian country code + number
 
     document.addEventListener('click', (e) => {
         const cta = e.target.closest('a.btn');
